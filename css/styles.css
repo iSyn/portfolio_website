@@ -1,0 +1,44 @@
+body {
+  background-image: url("https://scontent-lga3-1.xx.fbcdn.net/t31.0-8/13679992_10208756076532524_2616922023037324921_o.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.header {
+  text-align: center;
+}
+
+#main-header {
+  font-size: 150px;
+  font-family: 'oswald';
+  font-weight: bold;
+  margin: 0 auto;
+  /*color: white;*/
+  color: #3366CC;
+}
+
+#header-text {
+  font-family: 'montserrat';
+  margin-top: -30px;
+  margin-bottom: 0px;
+  font-size: 30px;
+  color: #6699FF;
+
+}
+
+.links {
+  text-align: center;
+  color: white;
+}
+
+a:visited {
+  color: white;
+}
+
+a:link {
+  color: white;
+}
+
+a:hover {
+  color: #C0C0C0;
+}
