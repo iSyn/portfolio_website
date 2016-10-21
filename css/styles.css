@@ -2,10 +2,12 @@ body {
   background-image: url("https://scontent-lga3-1.xx.fbcdn.net/t31.0-8/13679992_10208756076532524_2616922023037324921_o.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  /*background: linear-gradient(black, white);*/
 }
 
 .header {
   text-align: center;
+  white-space: nowrap;
 }
 
 #main-header {
@@ -13,7 +15,6 @@ body {
   font-family: 'oswald';
   font-weight: bold;
   margin: 0 auto;
-  /*color: white;*/
   color: #3366CC;
 }
 
@@ -23,7 +24,10 @@ body {
   margin-bottom: 0px;
   font-size: 30px;
   color: #6699FF;
+}
 
+span {
+  cursor: pointer;
 }
 
 .links {
