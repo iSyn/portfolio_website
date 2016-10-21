@@ -30,6 +30,10 @@ span {
   cursor: pointer;
 }
 
+.letter {
+  white-space: pre-line;
+}
+
 .links {
   text-align: center;
   color: white;
