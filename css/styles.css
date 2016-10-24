@@ -1,5 +1,19 @@
-body {
+/*body {
   background-image: url("https://scontent-lga3-1.xx.fbcdn.net/t31.0-8/13679992_10208756076532524_2616922023037324921_o.jpg");
+  background-image: url('https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/12115951_10206704577206323_8984805858796815625_n.jpg?oh=cf9abca27ccaec972333c1f7ade33f38&oe=58A9F261');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: linear-gradient(black, white);
+}*/
+
+.sections {
+  height: 100vh;
+  width: 100%;
+}
+
+.sections.section1 {
+  background-image: url("https://scontent-lga3-1.xx.fbcdn.net/t31.0-8/13679992_10208756076532524_2616922023037324921_o.jpg");
+  /*background-image: url('https://scontent-iad3-1.xx.fbcdn.net/v/t1.0-9/12115951_10206704577206323_8984805858796815625_n.jpg?oh=cf9abca27ccaec972333c1f7ade33f38&oe=58A9F261');*/
   background-size: cover;
   background-repeat: no-repeat;
   /*background: linear-gradient(black, white);*/
@@ -49,4 +63,11 @@ a:link {
 
 a:hover {
   color: #C0C0C0;
+}
+
+#scroll-down {
+  /*position: fixed;*/
+  color: white;
+  bottom: 0;
+  margin: 0 auto;
 }
