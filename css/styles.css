@@ -11,21 +11,19 @@ body {
 .sections.section1 {
 }
 
-.sections.section2 {
-  background: linear-gradient(to bottom, rgba(255,255,255,0.77) 0%,rgba(255,255,255,1) 100%);
-}
 
 .header {
   text-align: center;
-  white-space: nowrap;
 }
 
 #main-header {
+  padding-top: 200px;
   font-size: 180px;
   font-family: 'oswald';
   font-weight: bold;
   margin: 0 auto;
-  color: #3366CC;
+  /*color: #3366CC;*/
+  color: white;
 }
 
 #header-text {
@@ -33,7 +31,9 @@ body {
   margin-top: -10px;
   margin-bottom: 0px;
   font-size: 35px;
-  color: #6699FF;
+  /*color: #6699FF;*/
+  color: white;
+  text-shadow: 0px 3px black;
 }
 
 span {
@@ -69,7 +69,19 @@ a:hover {
   text-align: center;
 }
 
+.sections.section2 {
+  background: linear-gradient(to bottom, rgba(255,255,255,0.77) 0%,rgba(189,232,252,1) 100%);
+}
+
 #section2-header {
   text-align: center;
-  font-size: 50px;
+  font-size: 200px;
+  font-family: 'Roboto', sans-serif;
 }
+
+#section2-bio {
+  text-align: center;
+  width: 40%;
+  margin: 20px auto;
+}
+

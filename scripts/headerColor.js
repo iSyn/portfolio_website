@@ -32,7 +32,7 @@ $(() => {
 
   const originalColor = () => {
     setTimeout(function() {
-      $('.letter').css('color', '#3366CC')
+      $('.letter').css('color', 'white')
     },100)
     $('.letter').css('color', 'crimson')
   }
