@@ -4,9 +4,8 @@ $(() => {
 
 
   const changeColor = (e) => {
-    let color = $(e.target).data('color')
-    console.log(color)
-    $(e.target).css('color', color)
+    // let color = $(e.target).data('color')
+    $(e.target).css('color', 'lightpink')
   }
 
   const randomColor = (e) => {
