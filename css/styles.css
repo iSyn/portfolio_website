@@ -13,7 +13,7 @@
 }
 
 .background2 {
-  background: url('https://lh6.googleusercontent.com/pl5tmV-rdpiuD4ZGbN8GC_k-bGgk31l8FV1oytbA8AdDrMCCYvm7IfoqvkshnxJrmdyg08poq_ZUjTY=w1440-h803-rw') no-repeat center center fixed;
+  background: url('http://i.imgur.com/AjDTXLN.jpg') no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -23,6 +23,7 @@
 
 .header {
   text-align: center;
+  font-size: 100px;
 }
 
 #main-header {
@@ -79,8 +80,8 @@ a:hover {
 }
 
 .sections.section2 {
-  /*background: linear-gradient(to bottom, rgba(255,255,255,0.30) 0%,rgba(189,232,252,1) 100%);*/
-  background: linear-gradient(to bottom, rgba(255,255,255,0.20) 0%,rgba(255,255,255,1) 100%);
+  /*background: linear-gradient(to bottom, rgba(255,255,255,0.20) 0%,rgba(255,255,255,1) 100%);*/
+  background: rgba(255, 255, 255, .3);
   height: 100vh;
 }
 
@@ -89,7 +90,6 @@ a:hover {
   font-size: 200px;
   font-family: 'Roboto', sans-serif;
   color: black;
-  padding-top: 8%
 }
 
 #section2-bio {
@@ -100,8 +100,22 @@ a:hover {
 }
 
 .sections.section3 {
-  background-size: fill;
-  background: url('../assets/ripple_sunset_4k-wide.jpg');
-  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,.2) 100%);
+  /*background: rgba(0, 255, 255, .3));*/
+  background: rgba(224, 255, 255, .3);
 }
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.project {
+  margin-top: 4%;
+  border: 2px solid white;
+  background-color: black;
+  width: 48%;
+  height: 60vh;
+}
+
 
