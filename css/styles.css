@@ -56,15 +56,15 @@ span {
 
 .links {
   text-align: center;
-  color: white;
+  color: black;
 }
 
 a:visited {
-  color: white;
+  color: black;
 }
 
 a:link {
-  color: white;
+  color: black;
 }
 
 a:hover {
@@ -118,4 +118,8 @@ a:hover {
   height: 60vh;
 }
 
-
+.contact-information {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 100px;
+}
