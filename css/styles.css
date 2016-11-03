@@ -13,7 +13,7 @@
 }
 
 .background2 {
-  background: url('http://i.imgur.com/AjDTXLN.jpg') no-repeat center center fixed;
+  background: url(https://scontent-iad3-1.xx.fbcdn.net/t31.0-8/12080335_10206704577206323_8984805858796815625_o.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -101,13 +101,20 @@ a:hover {
 
 .sections.section3 {
   /*background: rgba(0, 255, 255, .3));*/
-  background: rgba(224, 255, 255, .3);
+  /*background: rgba(224, 255, 255, .3);*/
 }
 
 .projects-container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.section2-wrapper {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .project {
@@ -122,6 +129,16 @@ a:hover {
   margin: 0 auto;
   text-align: center;
   font-size: 100px;
+}
+
+.separator {
+  width: 100vw;
+  height: 0.2vh;
+  background: snow;
+}
+
+.section4 {
+  background: rgba(224, 255, 255, .3);
 }
 
 a {
