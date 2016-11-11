@@ -1,15 +1,16 @@
-
+.background-image-wrapper {
+  background: #222;
+}
 .part-one-container {
   height: 100vh;
   width: 100%;
  /* background-color: #2e3842;*/
-  background: #222;
-  position: absolute;
+  /*position: absolute;*/
 }
 
 .part-one-header-wrapper {
   background-color: #2e3842;
-  position: absolute;
+  position: fixed;
   border: 5px solid #FAFAFA;
   height: 90%;
   width: 90%;
@@ -20,7 +21,7 @@
 }
 
 .part-one-header-container {
-  position: fixed;
+  position: absolute;
   /*border: 2px solid #222;*/
   text-align: center;
   top: 45%;
@@ -33,6 +34,11 @@
   font-size: 18vh;
   font-family: 'Oswald';
   color: #FDFDFD;
+  /*display: none;*/
+}
+
+.part-one-header > span {
+  cursor: pointer;
 }
 
 .part-one-subheader {

@@ -2,6 +2,7 @@ $(() => {
 
   console.log('updateSubheader.js is linked')
 
+
   let subheaderTextNum = 1;
   let subheaderColorNum = 1;
 
