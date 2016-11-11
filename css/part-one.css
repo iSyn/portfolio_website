@@ -1,8 +1,19 @@
+
 .part-one-container {
   height: 100vh;
   width: 100%;
   background-color: #2e3842;
   position: absolute;
+}
+
+.part-one-header-wrapper {
+  position: absolute;
+  border: 5px solid white;
+  height: 90%;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .part-one-header-container {
@@ -12,7 +23,6 @@
   top: 45%;
   left: 50%;
   width: 90vw;
-  /*height: 90vh;*/
   transform: translate(-50%, -45%);
 }
 
