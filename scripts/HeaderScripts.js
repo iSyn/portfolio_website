@@ -7,7 +7,7 @@ $(() => {
   //   $('.part-one-header').addClass('animated zoomIn')
   // }, 500)
 
-  //WHY THO
+  //icit
 
   const changeColor = (e) => {
     // let color = $(e.target).data('color')
