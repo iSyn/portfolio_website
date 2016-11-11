@@ -6,10 +6,10 @@ $(() => {
   let subheaderColorNum = 1;
 
   const subheaderTextArr = [
-    'developer',
-    'eagle scout',
-    'powerlifter',
-    'dragon boater',
+    '— developer —',
+    '— eagle scout —',
+    '— powerlifter —',
+    '— dragon boater —',
   ]
 
   const subheaderColorArr = [
