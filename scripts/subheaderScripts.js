@@ -41,7 +41,7 @@ $(() => {
       subheaderTextNum++
       subheaderColorNum++
 
-    }, 1800)
+    }, 1500)
   })
 
 
