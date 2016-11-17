@@ -1,11 +1,33 @@
+* {
+  cursor: default;
+}
+
 .background-image-wrapper {
   background: #222;
+  /*background: #FDFDFD;*/
 }
 .part-one-container {
   height: 100vh;
   width: 100%;
  /* background-color: #2e3842;*/
   /*position: absolute;*/
+}
+
+.flip-over {
+  z-index: 3;
+  position: fixed;
+  height: 100vh;
+  width: 6vw;
+  /*background-color: green;*/
+  cursor: pointer;
+}
+
+#left {
+  left: 0;
+}
+
+#right{
+  right: 0;
 }
 
 /*.part-one-header-wrapper {
