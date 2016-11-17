@@ -16,6 +16,12 @@ $(() => {
           rotateX(${(-1)*(middleY - e.clientY)/90}deg)
           rotateY(${(middleX - e.clientX)/260}deg)
         `,
+        '-webkit-transform':
+        `
+          perspective(1000px)
+          rotateX(${(-1)*(middleY - e.clientY)/90}deg)
+          rotateY(${(middleX - e.clientX)/260}deg)
+        `,
         display: 'fixed',
         top: '5%',
         left: '5%'
