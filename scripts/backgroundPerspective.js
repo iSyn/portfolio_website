@@ -13,8 +13,8 @@ $(() => {
         transform:
         `
           perspective(1000px)
-          rotateX(${(middleY - e.clientY)/90}deg)
-          rotateY(${(middleX - e.clientX)/160}deg)
+          rotateX(${(-1)*(middleY - e.clientY)/90}deg)
+          rotateY(${(middleX - e.clientX)/260}deg)
         `,
         display: 'fixed',
         top: '5%',
