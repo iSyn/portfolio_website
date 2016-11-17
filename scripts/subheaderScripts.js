@@ -32,9 +32,9 @@ $(() => {
         subheaderColorNum = 0;
       }
 
-      $('.part-one-subheader').text(subheaderTextArr[subheaderTextNum])
-      $('.part-one-subheader').css('color', subheaderColorArr[subheaderColorNum])
-      $('.part-one-subheader').addClass('animated flipInX').one('animationend', function() {
+      $('.front-subheader').text(subheaderTextArr[subheaderTextNum])
+      $('.front-subheader').css('color', subheaderColorArr[subheaderColorNum])
+      $('.front-subheader').addClass('animated flipInX').one('animationend', function() {
         $(this).removeClass('animated flipInX')
       })
 

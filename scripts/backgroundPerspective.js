@@ -9,7 +9,7 @@ $(() => {
       var middleX = window.innerWidth / 3;
       var middleY = window.innerHeight / 3;
 
-      $('.part-one-header-wrapper').css({
+      $('.front-side-wrapper').css({
         transform:
         `
           perspective(1000px)
