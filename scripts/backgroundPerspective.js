@@ -14,7 +14,7 @@ $(() => {
         `
           perspective(1000px)
           rotateX(${(-1)*(middleY - e.clientY)/90}deg)
-          rotateY(${(middleX - e.clientX)/160}deg)
+          rotateY(${(middleX - e.clientX)/90}deg)
         `,
         display: 'fixed',
         top: '5%',
