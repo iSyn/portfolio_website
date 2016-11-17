@@ -12,6 +12,7 @@
   width: 100%;
  /* background-color: #2e3842;*/
   /*position: absolute;*/
+  overflow: hidden;
 }
 
 .flip-over {
