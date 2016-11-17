@@ -8,6 +8,18 @@
   /*position: absolute;*/
 }
 
+/*.part-one-header-wrapper {
+  background-color: #2e3842;
+  position: fixed;
+  border: 5px solid #FAFAFA;
+  height: 90%;
+  width: 90%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 20px 40px black;
+}*/
+
 .part-one-header-wrapper {
   background-color: #2e3842;
   position: fixed;
