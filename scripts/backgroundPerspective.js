@@ -1,10 +1,11 @@
 $(() => {
-
+  // scrapped from BobbyDigital https://github.com/gittheking
   console.log('backgroundPerspective.js is linked')
 
   if (navigator.vendor.indexOf('Apple') < 0) {
     $(document).mousemove((e) => {
       console.log('mousemove')
+      console.log(e.clientY)
 
       var middleX = window.innerWidth / 3;
       var middleY = window.innerHeight / 3;
