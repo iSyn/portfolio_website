@@ -1,8 +1,5 @@
 $(() => {
 
-  console.log('updateSubheader.js is linked')
-
-
   let subheaderTextNum = 1;
   let subheaderColorNum = 1;
 
@@ -24,7 +21,6 @@ $(() => {
   const updateSubheader = (() => {
 
     setInterval(() => {
-      console.log(subheaderTextNum)
       if (subheaderTextNum >= subheaderTextArr.length) {
         subheaderTextNum = 0;
       }
