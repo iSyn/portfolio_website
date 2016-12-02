@@ -1,16 +1,6 @@
 $(() => {
 
-  console.log('updateHeaderColor.js is linked')
-
-  // setTimeout(() => {
-  //   $('.part-one-header').css('display', 'block')
-  //   $('.part-one-header').addClass('animated zoomIn')
-  // }, 500)
-
-  //icit
-
   const changeColor = (e) => {
-    // let color = $(e.target).data('color')
     $(e.target).css('color', 'lightpink')
   }
 
