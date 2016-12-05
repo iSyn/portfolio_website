@@ -82,11 +82,6 @@ body {
   cursor: pointer;
 }
 
-.back > div {
-  font-size: 100px;
-}
-
-
 /* ################################################################## */
 
 .front-header-container {
@@ -129,7 +124,8 @@ li {
 }
 
 .test {
-  font-size: 150px;
+  font-size: 300px;
   color: white;
+  z-index: 3;
 }
 
