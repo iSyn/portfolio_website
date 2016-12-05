@@ -13,9 +13,22 @@ body {
   height: 100vh;
   width: 10vw;
   cursor: pointer;
-  background: gray;
-  font-size: 30px;
   color: white;
+  vertical-align: middle;
+}
+
+.fa-angle-left {
+  position: absolute;
+  top: 45%;
+  left: 20%;
+  transform: translateY(-45%);
+}
+
+.fa-angle-right {
+  position: absolute;
+  top: 45%;
+  right: 20%;
+  transform: translateY(-45%);
 }
 
 #left {
@@ -78,7 +91,7 @@ body {
 }
 
 .front-header {
-  font-size: 10vw;
+  font-size: 11vw;
   font-family: 'Oswald';
   color: #FDFDFD;
 }
