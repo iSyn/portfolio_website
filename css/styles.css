@@ -97,5 +97,11 @@ body {
   /*-webkit-animation-iteration-count: infinite;*/
 }
 
+ul {
+  list-style: none;
+  padding: 5px;
+}
 
-
+li {
+  color: white;
+}
