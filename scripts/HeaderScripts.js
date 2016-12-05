@@ -1,5 +1,7 @@
 $(() => {
 
+  console.log('linked')
+
   let subheaderTextNum = 1;
   let subheaderColorNum = 1;
 
