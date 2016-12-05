@@ -40,6 +40,7 @@ body {
 }
 
 .card {
+  z-index: 1;
   background-color: #2e3842;
   position: relative;
   border: 5px solid #FAFAFA;
@@ -65,6 +66,8 @@ body {
   position: absolute;
   -webkit-backface-visibility: hidden;
   z-index: 2;
+  height: 100%;
+  width: 100%;
 }
 
 .front {
@@ -78,6 +81,11 @@ body {
   color: black;
   cursor: pointer;
 }
+
+.back > div {
+  font-size: 100px;
+}
+
 
 /* ################################################################## */
 
@@ -94,6 +102,7 @@ body {
   font-size: 11vw;
   font-family: 'Oswald';
   color: #FDFDFD;
+  cursor: default;
 }
 
 .front-header > span {
@@ -118,3 +127,9 @@ ul {
 li {
   color: white;
 }
+
+.test {
+  font-size: 150px;
+  color: white;
+}
+
