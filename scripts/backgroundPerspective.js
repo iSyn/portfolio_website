@@ -21,8 +21,8 @@ $(() => {
           rotateY(${(middleX - e.clientX)/260}deg)
         `,
         display: 'fixed',
-        top: '5%',
-        left: '5%'
+        top: '9.5%',
+        left: '9.5%'
       });
     })
   }

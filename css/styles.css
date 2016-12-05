@@ -39,8 +39,8 @@
   background-color: #2e3842;
   position: fixed;
   border: 5px solid #FAFAFA;
-  height: 90%;
-  width: 90%;
+  height: 80%;
+  width: 80%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -59,7 +59,7 @@
 }
 
 .front-header {
-  font-size: 12vw;
+  font-size: 10vw;
   font-family: 'Oswald';
   color: #FDFDFD;
   /*display: none;*/
