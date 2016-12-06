@@ -8,6 +8,15 @@ body {
  background: #222;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+  color: inherit;
+}
+
 .flip-click {
   position: fixed;
   height: 100vh;
@@ -130,18 +139,19 @@ li {
   z-index: 3;
 }
 
-img {
+.project-thumbnail {
   height: 24vh;
   width: auto;
   border: 2px solid #FAFAFA !important;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
+  display: inline-block;
 }
 
-img:hover {
+/*img:hover {
   background: black;
   opacity: 0.3;
-}
+}*/
 
 .back-side-wrapper {
   display: flex;
@@ -169,18 +179,25 @@ img:hover {
   padding: 3vh;
 }
 
-.contact-information p {
+.contact-information > p {
   font-family: 'Abel';
   font-size: 2.5vw;
 }
 
-.contact-information li, a {
-  font-size: 2vw;
-  text-decoration: none;
-
+.info {
+  padding: 3%;
 }
 
+.info p {
+  font-family: 'Roboto';
+  font-size: 2vw;
+  padding: 0.5%;
+}
+
+
+
 .projects-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -192,10 +209,59 @@ img:hover {
   /*background: lime;*/
 }
 
-/*.description {
+.project {
   position: relative;
+}
+
+.project-name {
+  display: none;
+  position: absolute;
+  color: white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2vw;
+}
+
+.cover-hover {
+  display: none;
+  position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.6);
-}*/
+  background-color: rgba(0, 0, 0, 0.6);
+  transition: all 0.5s;
+  z-index: 2;
+}
+
+.project-1:hover .cover-hover {
+  display: block;
+  cursor: pointer;
+}
+
+.project-2:hover .cover-hover {
+  display: block;
+  cursor: pointer;
+}
+
+.project-3:hover .cover-hover {
+  display: block;
+  cursor: pointer;
+}
+
+.project-1:hover p {
+  z-index: 3;
+  display: block;
+}
+
+.project-2:hover p {
+  z-index: 3;
+  display: block;
+}
+
+.project-3:hover p {
+  z-index: 3;
+  display: block;
+}
+
+
 
