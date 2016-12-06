@@ -122,4 +122,8 @@ $(() => {
   $('.letter').on('mouseout', randomColor)
   $('.letter').on('click', originalColor)
 
+  // ###################################################################
+
+
+
 })
