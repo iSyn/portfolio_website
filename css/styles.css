@@ -5,7 +5,7 @@
 }
 
 body {
- background: #222;
+  background: #222;
 }
 
 a {
@@ -14,7 +14,7 @@ a {
 
 a:visited {
   text-decoration: none;
-  color: inherit;
+  color: white;
 }
 
 .flip-click {
