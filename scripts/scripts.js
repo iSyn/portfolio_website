@@ -46,7 +46,7 @@ $(() => {
 
   const subheaderTextArr = [
     '— developer —',
-    '— eagle scout —',
+    '— boy scout —',
     '— powerlifter —',
     '— dragon boater —',
   ]
