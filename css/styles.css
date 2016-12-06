@@ -131,8 +131,37 @@ li {
 }
 
 img {
-  height: 40vh;
+  height: 24vh;
   width: auto;
-  border: 2px solid white;
+  border: 2px solid #FAFAFA !important;
+}
+
+.back-side-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.contact-information {
+  width: 68%;
+  height: 98%;
+  background: lime;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-content: center;
+  width: 30%;
+  height: 98%;
+  /*background: lime;*/
+
 }
 
