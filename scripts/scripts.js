@@ -124,8 +124,15 @@ $(() => {
 
   // ###################################################################
 
-  $('project-1').hover(() => {
-    console.log('hovering')
+  $('proj-1').click(() => {
+    console.log('proj 1 clicked')
   })
 
+  $('proj-2').click(() => {
+    console.log('proj 2 clicked')
+  })
+
+  $('proj-3').click(() => {
+    console.log('proj 3 clicked')
+  })
 })

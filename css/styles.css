@@ -2,6 +2,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  clear: both;
 }
 
 body {
@@ -13,12 +14,10 @@ a {
 }
 
 a:visited {
-  text-decoration: none;
   color: white;
 }
 
 a:link {
-  text-decoration: none;
   color: white;
 }
 
@@ -95,6 +94,7 @@ a:link {
   -webkit-transform: rotateY(180deg);
   color: black;
   background-color: #2e3842;
+  overflow: auto;
 }
 
 /* ################################################################## */
@@ -146,7 +146,13 @@ li {
 
 .project-thumbnail {
   height: 24vh;
-  width: auto;
+  width: 21.5vw;
+  /*width: auto;*/
+  min-height: 24vh;
+  max-height: 24vh;
+  min-width: 21.5vw;
+  max-width: 21.5vw;
+
   border: 2px solid #FAFAFA !important;
   transition: all 0.3s ease-in-out;
   cursor: pointer;
@@ -199,26 +205,30 @@ li {
   padding: 0.5%;
 }
 
-
+.resume {
+  cursor: pointer;
+}
 
 .projects-container {
   position: relative;
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  flex-shrink: 0;
+  /*justify-content: space-around;*/
   align-items: center;
-  align-content: center;
+  /*align-content: center;*/
   width: 28%;
   height: 98%;
   /*background: lime;*/
+  overflow: auto;
 }
 
 .project {
   position: relative;
 }
 
-.project-name {
+.project-info {
   display: none;
   position: absolute;
   color: white;
@@ -226,6 +236,12 @@ li {
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 2vw;
+  text-align: center;
+  width: 100%;
+}
+
+.project-description {
+  font-size: 1vw;
 }
 
 .cover-hover {
@@ -233,40 +249,21 @@ li {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.8);
   transition: all 0.5s;
   z-index: 2;
 }
 
-.project-1:hover .cover-hover {
+.project:hover .cover-hover {
   display: block;
   cursor: pointer;
 }
 
-.project-2:hover .cover-hover {
-  display: block;
+.project:hover p {
+  z-index: 3;
   cursor: pointer;
-}
-
-.project-3:hover .cover-hover {
-  display: block;
-  cursor: pointer;
-}
-
-.project-1:hover p {
-  z-index: 3;
   display: block;
 }
 
-.project-2:hover p {
-  z-index: 3;
-  display: block;
-}
-
-.project-3:hover p {
-  z-index: 3;
-  display: block;
-}
-
-
+*/
 
