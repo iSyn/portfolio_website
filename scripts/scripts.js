@@ -124,15 +124,16 @@ $(() => {
 
   // ###################################################################
 
-  $('proj-1').click(() => {
-    console.log('proj 1 clicked')
+  $('.proj-1').click(() => {
+    window.open("https://isyn.github.io/Doors/game.html")
   })
 
-  $('proj-2').click(() => {
-    console.log('proj 2 clicked')
+  $('.proj-2').click(() => {
+    window.open("https://tsundokuit.herokuapp.com")
   })
 
-  $('proj-3').click(() => {
-    console.log('proj 3 clicked')
+  $('.proj-3').click(() => {
+    window.open("https://reask.herokuapp.com")
   })
+
 })
