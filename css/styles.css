@@ -234,7 +234,8 @@ li {
   width: 28%;
   height: 98%;
   /*background: lime;*/
-  overflow: auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .project {
