@@ -5,11 +5,6 @@
   clear: both;
 }
 
-#particles-js {
-  height: 100vh;
-  width: 100vw;
-}
-
 body {
   background: #222;
 }
@@ -30,40 +25,6 @@ a:link {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-}
-
-.flip-click {
-  position: fixed;
-  height: 50vh;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 10vw;
-  cursor: pointer;
-  color: white;
-  color: skyblue;
-  vertical-align: middle;
-}
-
-.fa-angle-left {
-  position: absolute;
-  top: 45%;
-  left: 20%;
-  transform: translateY(-45%);
-}
-
-.fa-angle-right {
-  position: absolute;
-  top: 45%;
-  right: 20%;
-  transform: translateY(-45%);
-}
-
-#left {
-  left: 0;
-}
-
-#right {
-  right: 0;
 }
 
 .card {
