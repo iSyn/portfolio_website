@@ -1,15 +1,5 @@
 $(() => {
 
-  // ###################################################################
-
-
-  // ###################################################################
-  // Toggles the flipped class
-
-  $('.flip-click').click(() => {
-    $('.card').toggleClass('flipped');
-  })
-
   // Header scripts
 
   let subheaderTextNum = 1;
