@@ -57,7 +57,7 @@ header {
 .projects h1 {
   font-family: 'Open Sans';
   font-size: 20px;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .project {
@@ -74,6 +74,13 @@ header {
   text-align: center;
   font-size: 30px;
   font-family: 'Raleway';
+}
+
+.project:hover h1 {
+  color: #422FB1;
+  border-radius: 15px;
+  /*background-color: rgba(0, 0, 0, 0.1);*/
+  animation-duration: 1s;
 }
 
 footer {
