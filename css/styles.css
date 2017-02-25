@@ -15,7 +15,7 @@ body {
 
 .content-container {
   width: 50vw;
-  height: 100vw;
+  /*height: 100vw;*/
   /*background-color: grey;*/
   margin-left: auto;
   margin-right: auto;
@@ -91,4 +91,8 @@ footer a {
   display: block;
   font-family: 'Open Sans';
   font-size: 30px;
+}
+
+footer:last-child {
+  padding-bottom: 50px;
 }
