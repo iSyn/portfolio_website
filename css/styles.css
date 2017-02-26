@@ -167,7 +167,8 @@ img {
   }
   .test {
     display: block;
-    margin-bottom: -20px;
+    margin-bottom: -40px;
+    font-size: 80px;
   }
   .test2 {
     display: none;
