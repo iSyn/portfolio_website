@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway|Roboto+Condensed|Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Raleway|Droid+Sans|Open+Sans');
 
 * {
   box-sizing: border-box;
@@ -35,7 +35,8 @@ header {
 .subheader {
   display: inline-block;
   text-align: left;
-  font-family: 'Open Sans';
+  /*font-family: 'Open Sans';*/
+  font-family: 'Droid Sans';
   font-size: 25px;
   width: 100%;
   /*color: red;*/
@@ -133,4 +134,10 @@ img {
 .project-info {
   font-family: 'Open Sans';
   font-size: 20px;
+}
+
+@media (max-width: 900px) {
+  .content-container {
+    width: 90vw;
+  }
 }
