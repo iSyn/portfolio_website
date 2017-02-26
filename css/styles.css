@@ -81,11 +81,15 @@ header {
   font-family: 'Raleway';
 }
 
-.project-icon{
+.project-icon {
   position: absolute;
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.project:hover .project-icon {
+  color: #422FB1;
 }
 
 .project:hover h1 {
@@ -182,6 +186,9 @@ img {
     font-size: 80px;
   }
   .test2 {
+    display: none;
+  }
+  .tools {
     display: none;
   }
   .project h1 {
