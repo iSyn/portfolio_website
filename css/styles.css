@@ -153,7 +153,7 @@ img {
 
 @media (max-device-width: 700px) {
   .content-container {
-    width: 90vw;
+    width: 98vw;
   }
   * {
     text-align: center;
@@ -164,5 +164,10 @@ img {
   }
   .subheader {
     text-align: center;
+  }
+  .project h1 {
+  line-height: 150px;
+  text-align: center;
+  font-size: 50px;
   }
 }
