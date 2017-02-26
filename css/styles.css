@@ -146,6 +146,11 @@ img {
   border: 2px solid white;
 }
 
+.tsundoku {
+  width: 90%;
+  height: auto;
+}
+
 .project-info {
   font-family: 'Open Sans';
   font-size: 20px;
