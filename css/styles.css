@@ -140,4 +140,13 @@ img {
   .content-container {
     width: 90vw;
   }
+  * {
+    text-align: center;
+  }
+  .header {
+    text-align: center;
+  }
+  .subheader {
+    text-align: center;
+  }
 }
