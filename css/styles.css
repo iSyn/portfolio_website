@@ -71,10 +71,21 @@ header {
 }
 
 .project h1 {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
   line-height: 150px;
-  text-align: center;
+  text-align: left;
+  left: 5%;
   font-size: 30px;
   font-family: 'Raleway';
+}
+
+.project-icon{
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .project:hover h1 {
