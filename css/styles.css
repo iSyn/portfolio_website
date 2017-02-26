@@ -165,9 +165,22 @@ img {
   .subheader {
     text-align: center;
   }
+  .test {
+    display: block;
+    margin-bottom: -20px;
+  }
+  .test2 {
+    display: none;
+  }
   .project h1 {
   line-height: 150px;
   text-align: center;
   font-size: 50px;
+  }
+  .about-me {
+    margin-top: 20px;
+  }
+  .mobile {
+    margin-top: -200px;
   }
 }
