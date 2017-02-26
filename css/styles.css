@@ -150,3 +150,19 @@ img {
     text-align: center;
   }
 }
+
+@media (max-device-width: 700px) {
+  .content-container {
+    width: 90vw;
+  }
+  * {
+    text-align: center;
+  }
+  .header {
+    text-align: center;
+    font-size: 40px;
+  }
+  .subheader {
+    text-align: center;
+  }
+}
