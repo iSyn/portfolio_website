@@ -192,7 +192,7 @@ img {
   }
   .header {
     text-align: center;
-    font-size: 60px;
+    font-size: 70px;
   }
   .subheader {
     text-align: center;
@@ -209,9 +209,9 @@ img {
     display: none;
   }
   .project h1 {
-  line-height: 150px;
-  text-align: center;
-  font-size: 50px;
+    line-height: 150px;
+    text-align: center;
+    font-size: 30px;
   }
   .about-me {
     margin-top: 20px;
