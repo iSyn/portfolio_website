@@ -10,16 +10,23 @@
 }
 
 body {
-  background: aliceblue;
+  background: azure;
+  /*background: red;*/
+}
+
+#particles {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
 }
 
 .content-container {
+  position: absolute;
   width: 50vw;
-  /*height: 100vw;*/
-  /*background-color: grey;*/
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 100px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 header {
@@ -66,7 +73,7 @@ header {
   height: 150px;
   border-radius: 20px;
   margin-bottom: 20px;
-  border: 2px solid #422FB1;
+  border: 2px solid black;
   box-shadow: 0px 2px 20px white;
 }
 
@@ -79,6 +86,7 @@ header {
   left: 5%;
   font-size: 30px;
   font-family: 'Raleway';
+  color: black;
 }
 
 .project-icon {
@@ -86,6 +94,10 @@ header {
   right: 5%;
   top: 50%;
   transform: translateY(-50%);
+}
+
+.project:hover {
+  border-color: #422FB1;
 }
 
 .project:hover .project-icon {
@@ -110,7 +122,7 @@ footer h1 {
 
 footer a {
   text-decoration: none;
-  display: block;
+  /*display: block;*/
   font-family: 'Open Sans';
   font-size: 30px;
 }
