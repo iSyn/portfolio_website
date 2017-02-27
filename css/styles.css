@@ -13,6 +13,7 @@ body {
   /*background: azure;*/
   background: aliceblue;
   /*background: red;*/
+  overflow-x: hidden;
 }
 
 #particles {
