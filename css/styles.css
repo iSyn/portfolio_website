@@ -14,6 +14,7 @@ body {
   background: aliceblue;
   /*background: red;*/
   overflow-x: hidden;
+  overflow-y: auto;
 }
 
 #particles {
