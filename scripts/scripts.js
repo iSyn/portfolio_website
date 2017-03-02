@@ -1,5 +1,24 @@
 $(() => {
 
+  setTimeout(() => {
+    $('.p1').attr('data-aos', 'blank');
+  }, 1000)
+
+  $(document).scroll(() => {
+    if ($('.p1').hasClass('aos-animate')) {
+      $('.p1').attr('data-aos', 'blank')
+    }
+    if ($('.p2').hasClass('aos-animate')) {
+      $('.p2').attr('data-aos', 'blank')
+    }
+    if ($('.p3').hasClass('aos-animate')) {
+      $('.p3').attr('data-aos', 'blank')
+    }
+  })
+
+
+  AOS.init();
+
   $(".subheader").typed({
     strings: ["Full Stack Web Developer", "Powerlifter", 'Boyscout', 'Dragon Boater'],
     typeSpeed: 60,
