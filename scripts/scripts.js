@@ -20,6 +20,9 @@ $(() => {
     if ($('.p3').hasClass('aos-animate')) {
       $('.p3').attr('data-aos', 'blank')
     }
+    if ($('.p4').hasClass('aos-animate')) {
+      $('.p4').attr('data-aos', 'blank')
+    }
   })
 
 
