@@ -6,10 +6,15 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 a:visited {
-  color: default;
+  color: black;
+}
+
+a:hover {
+  text-decoration: underline;
 }
 
 .page-container {
@@ -29,11 +34,11 @@ a:visited {
   flex-flow: column nowrap;
   padding-left: 50px;
   align-items: center;
+  text-align: center;
 }
 
-.description-rope {
+.chain {
   z-index: -1;
-  height: 50px;
   width: 20px;
   /*background-color: black;*/
   background: url('./assets/chain2.png');
@@ -50,7 +55,6 @@ a:visited {
   /*border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;*/
   /*border-radius: 10px;*/
-  background: snow;
 }
 
 .description h1 {
@@ -75,13 +79,4 @@ a:visited {
   flex-grow: 1;
 }
 
-.contact h3 {
-  font-family: 'Lora';
-  font-size: 2em;
-  padding-bottom: 10px;
-}
-
-.contact p {
-  text-align: center;
-}
 
