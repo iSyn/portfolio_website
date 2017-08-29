@@ -123,12 +123,17 @@ a:hover {
   line-height: 1.8;
 }
 
-.journal-entry p {
+.entry {
   border: 2px solid black;
   border-radius: 5px;
   /*padding: 5px 0px 5px 10px;*/
   padding: 10px 5px 10px 20px;
   box-shadow: 0 2px #222;
   background-color: #F1FAEE;
+  /*font-size: 90%;*/
+}
+
+table, th, td {
+    border: 1px solid black;
 }
 
