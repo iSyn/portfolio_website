@@ -38,6 +38,7 @@ a:hover {
   -webkit-user-select: none;
   -ms-user-select: none;
   width: 40%;
+  padding: 0px 20px;
 }
 
 .description-container {
@@ -100,7 +101,7 @@ a:hover {
 }
 
 .right header {
-  text-align: center;
+  /*text-align: center;*/
   font-family: 'Lora';
   font-size: 5em;
   margin-top: 40px;
@@ -112,13 +113,13 @@ a:hover {
   overflow: auto;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center;
+  /*align-items: center;*/
 }
 
 .journal-entry {
   width: 70%;
   font-family: 'Open Sans';
-  padding: 20px;
+  /*padding: 20px;*/
   line-height: 1.8;
 }
 
