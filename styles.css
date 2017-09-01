@@ -94,6 +94,7 @@ a:hover {
 
 .right {
   flex-grow: 1;
+  margin-left: 20px;
   /*background: #F1FAEE;*/
   /*background: linear-gradient(to bottom, #a8dadc, #F1FAEE);*/
   display: flex;
@@ -104,8 +105,9 @@ a:hover {
   /*text-align: center;*/
   font-family: 'Lora';
   font-size: 5em;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 20px;
+  padding-left: 20px;
 }
 
 .journal-container {
@@ -113,6 +115,7 @@ a:hover {
   overflow: auto;
   display: flex;
   flex-flow: column nowrap;
+  padding-left: 20px;
   /*align-items: center;*/
 }
 
@@ -120,16 +123,24 @@ a:hover {
   width: 70%;
   font-family: 'Open Sans';
   /*padding: 20px;*/
-  line-height: 1.8;
+  line-height: 1.5;
   margin-bottom: 30px;
 }
 
 .entry {
-  border: 2px solid black;
+  /*border: 2px solid black;*/
   border-radius: 5px;
   /*padding: 5px 0px 5px 10px;*/
   padding: 10px 5px 10px 20px;
-  box-shadow: 0 2px #222;
+  box-shadow: 0 0 10px #222;
   background-color: #F1FAEE;
+  font-family: "Noto Serif";
   /*font-size: 90%;*/
+}
+
+img {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 5px;
 }
