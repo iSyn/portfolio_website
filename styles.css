@@ -91,8 +91,7 @@ a:hover {
 .right {
   width: 70%;
   margin-left: 20px;
-  /*background: #F1FAEE;*/
-  /*background: linear-gradient(to bottom, #a8dadc, #F1FAEE);*/
+  overflow: auto;
   display: flex;
   flex-flow: column nowrap;
 }
@@ -107,8 +106,6 @@ a:hover {
 }
 
 .journal-container {
-  /*flex-grow: 1;*/
-  overflow: auto;
   display: flex;
   flex-flow: column nowrap;
   padding-left: 20px;
@@ -138,4 +135,18 @@ img {
   left: 50%;
   transform: translateX(-50%);
   margin: 5px;
+}
+
+.flip {
+  animation: flip 3s infinite ease-in-out;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+
 }
