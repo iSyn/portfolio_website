@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title> Portfolio Effects - Easy to implement effects for your portfolio site! </title>
+    <link rel="stylesheet" href="./foliofx/css/owl.carousel.css">
+    <link rel="stylesheet" href="./foliofx/css/dragula.min.css">
+    <link rel="stylesheet" href="./foliofx/css/styles.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amiko" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,400" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Ranga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <!-- other -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-93230140-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+
+  </head>
+
+  <body>
+
+    <div class="spinner-container">
+      <div class="spinner">
+        <div class="rect1"></div>
+        <div class="rect2"></div>
+        <div class="rect3"></div>
+        <div class="rect4"></div>
+        <div class="rect5"></div>
+      </div>
+    </div>
+
+    <div class="page-container">
+
+      <!-- <nav>
+        <h1 class='nav-text'>Folio FX</h1>
+        <h1 style='position: absolute; right: 40px;'>about | contact</h1>
+      </nav> -->
+
+      <header>
+        <h1 class='header animated pulse'>Folio FX</h1>
+      </header>
+
+      <div class="about">
+        <p>&ndash; a collection of effects to add into your site to make that shit pop &ndash;</p>
+        <p style="font-size: 80%" class='hide-me'>(don't add everything though... that'd be bad...)</p>
+      </div>
+
+     <!--  <nav>
+        <h1><a href="./about.html" style='color: black'>about</a> | <span class='contact'>contact</span></h1>
+      </nav> -->
+
+      <div class="content-container">
+        <section class="left">
+
+          <!-- ADD NEW ONE -->
+          <div class="effect wow fadeInUp new-effect" id='new-effect-1'>
+            <i class='add-new-effect-btn fa fa-plus fa-5x'></i>
+            <div class="effect-cover">
+              <h1 class='new-effect-text'>Add your own!</h1>
+            </div>
+          </div>
+
+          <!-- Animate.css -->
+          <div class="effect animated fadeInUp" id='animate'>
+            <h1 class='animated animateThis'>Amazing!</h1>
+            <div class="effect-cover">
+              <h1 style='font-family: "Roboto"; font-weight: 100'>Animate.css</h1>
+              <p style='font-family: "Open Sans"';>70+ unique animations to make your website pop!</p>
+              <a href="https://daneden.github.io/animate.css/" target='_blank'>
+                <div class="effect-button">Website</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- OwlCarousel.JS -->
+          <div class="effect wow fadeInUp" id='owlCarousel'>
+            <div class="owl-carousel">
+              <div class='owl-single' style='background-color: #b1eb00'>
+                <p>Incredible!</p>
+              </div>
+              <div class='owl-single' style='background-color: #53bbf4'>
+                <p>Click and drag me!</p>
+              </div>
+              <div class='owl-single' style='background-color: #ff85cb'>
+                <p>Wow!</p>
+              </div>
+              <a href="http://owlcarousel2.github.io/OwlCarousel2/" target='_blank'>
+                <div class='owl-single pointer' style='background-color: #ff432e'>
+                  <p>WEBSITE</p>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Font Awesome -->
+          <div class="effect wow fadeInUp" id='fa' style='background-color: #1ea176'>
+            <!-- <h1>Font Awesome <i class='fa fa-flag 2x'></i></h1> -->
+            <h1>
+              <i class='fa fa-flag 2x'></i>
+              <i class='fa fa-snowflake-o 2x'></i>
+              <i class='fa fa-user-circle 2x'></i>
+              <i class='fa fa-bell 2x'></i>
+              <i class='fa fa-battery-3 2x'></i>
+              <i class='fa fa-credit-card 2x'></i> <br>
+              <i class='fa fa-envelope 2x'></i>
+              <i class='fa fa-download 2x'></i>
+              <i class='fa fa-female 2x'></i>
+              <i class='fa fa-gamepad 2x'></i>
+              <i class='fa fa-hand-rock-o 2x'></i>
+              <i class='fa fa-reorder 2x'></i>
+              <i class='fa fa-thumbs-up 2x'></i> <!-- <br>
+              <i class='fa fa-wifi 2x'></i>
+              <i class='fa fa-warning 2x'></i>
+              <i class='fa fa-rocket 2x'></i>
+              <i class='fa fa-cog 2x'></i>
+              <i class='fa fa-bar-chart 2x'></i>
+              <i class='fa fa-money 2x'></i> -->
+            </h1>
+            <div class="effect-cover">
+              <h1 style='font-family:"Museo Slab";'>Font Awesome</h1>
+              <p style='font-family:"Open Sans"'>A huge collection of over 600 icons.</p>
+              <a href="http://fontawesome.io/" target='_blank'>
+                <div class="effect-button">Website</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Baffle.JS -->
+          <div class="effect wow fadeInUp" id='baffle'>
+            <span class='baffle' style="font-family: 'Menlo Regular'">Folio FX</span>
+            <div class="effect-cover">
+              <h1 style='font-family:"Menlo Regular"'>Baffle.js</h1>
+              <p style='font-family: "Open Sans"'>A tiny javascript library for obfuscating and revealing text in DOM elements.</p>
+              <a href="https://camwiegert.github.io/baffle/" target='_blank'>
+                <div class="effect-button">Website</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Marquee3k.JS -->
+          <div class="effect wow fadeInUp" id='marquee3k' style="height: auto">
+            <h1 class='marquee3k' style='background-color: #5BC0EB'>woweee look at thisssssss!</h1>
+            <h1 class='marquee3k' style='background-color: #FDE74C'>marquees for days</h1>
+            <h1 class='marquee3k' data-reverse="true" style='font-size: 60px; background-color: #9BC53D; color: white;'>hehe im big</h1>
+            <h1 class='marquee3k' data-reverse="false" style='font-size: 20px; background-color: #E55934; color: black;'>im tiny</h1>
+            <h1 class='marquee3k' style='background-color: #FA7921'>horizontal ticker!!</h1>
+            <h1 class='marquee3k' style='background-color: slateblue; font-size: 30px; color: white;'>breaking news... man spontaneously combusted.</h1>
+            <div class="effect-cover" style='position: absolute; top: 0; left: 0;'>
+              <h1 style='font-family:"Arial";'>Marquee3000.js</h1>
+              <p style='font-family: "Open Sans"'>Make marquees with ease. It can go vertically too!</p>
+              <a href="http://ezekielaquino.com/Marquee3000/" target='_blank'>
+                <div class="effect-button">Website</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Gradient Animator -->
+          <div class="effect wow fadeInUp" id='gradient-animator'>
+            <div class="effect-cover">
+              <h1 style='font-family:"Open Sans"; font-weight: 300;'>Gradient Animator</h1>
+              <p style='font-family: "Roboto"'>Make animated gradients!</p>
+              <a href="https://www.gradient-animator.com/" target='_blank'>
+                <div class="effect-button">Website</div>
+              </a>
+            </div>
+          </div>
+
+        </section>
+
+        <section class="right">
+
+          <!-- DnD.JS -->
+          <div class="effect wow fadeInUp" id='dragNdrop'>
+            <div id="box1" class='box'>
+              <p>I can go anywhere!</p>
+            </div>
+            <div id="box2" class="box">
+              <p>I can only go horizontally!</p>
+            </div>
+            <div id="box3" class="box">
+              <p>I can only go vertically!</p>
+            </div>
+            <a href="https://thibaultjanbeyer.github.io/dragNdrop/" target='_blank'>
+              <div id="box4" class="box">
+                <p>Click me to visit website</p>
+              </div>
+            </a>
+          </div>
+
+          <!-- Particles.JS -->
+          <div class="effect wow fadeInUp" id='particles' style='background-color: #222'>
+            <div class="effect-cover">
+              <h1 style='font-family:"Slabo 27px"'>Particles.js</h1>
+              <p style='font-family: "Roboto"; font-weight: 300'>Particles particles particles! Make beautiful effects with a wide array of customization</p>
+              <a href="http://vincentgarreau.com/particles.js/" target='_blank'>
+                <div class="effect-button">Website</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Typed.JS -->
+          <div class="effect wow fadeInUp" id='typed'>
+            <div class="effect-cover">
+              <h1 style='font-family:"Ubuntu"'>Typed.js</h1>
+              <p style='font-family: "Raleway"'>A simple plugin that creates a typewriter effect</p>
+              <a href="http://www.mattboldt.com/demos/typed-js/" target='_blank'>
+                <div class="effect-button">Website</div>
+              </a>
+            </div>
+            <p class='typed-example'></p>
+          </div>
+
+          <!-- Coolors -->
+          <div class="effect wow fadeInUp" id='coolors'>
+            <div class="colors-container">
+              <div class="color" style="background-color: #247BA0"></div>
+              <div class="color" style="background-color: #70C1B3"></div>
+              <div class="color" style="background-color: #B2DBBF"></div>
+              <div class="color" style="background-color: #F3FFBD"></div>
+              <div class="color" style="background-color: #FF1654"></div>
+            </div>
+            <div class="effect-cover" style='position: absolute; top: 0; left: 0;'>
+              <h1 style='font-family:"Open Sans"'>Coolors</h1>
+              <p style='font-family: "Roboto"; font-weight: 300' >Beautiful color palettes... whats more to say?</p>
+              <a href="https://coolors.co/browser/best/1" target='_blank'>
+                <div class="effect-button">Website</div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Dragula.JS -->
+          <div class="effect wow fadeInUp" id='Dragula'>
+            <div class="drag-container-container">
+              <div id='drag-left' class="drag-container">
+                <div style='background-color: #FFBF00'>Left</div>
+                <a href="https://bevacqua.github.io/dragula/" target="_blank">
+                  <div style='background-color: #E83F6F; color: white; padding-top: 20px; padding-bottom: 20px'>Website</div>
+                </a>
+                <div style='background-color: #2274A5'>Left</div>
+                <div style='background-color: #32936F'>Left</div>
+                <div style='background-color: #FFFFFF'>Left</div>
+              </div>
+              <div id='drag-right' class="drag-container">
+                <div style='background-color: #1BE7FF'>Right</div>
+                <div style='background-color: #6EEB83'>Right</div>
+                <div style='background-color: #E4FF1A'>Right</div>
+                <div style='background-color: #E8AA14'>Right</div>
+                <div style='background-color: #FF5714'>Right</div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ADD NEW ONE -->
+          <div class="effect wow fadeInUp new-effect" id='new-effect-2'>
+            <i class='add-new-effect-btn fa fa-plus fa-5x'></i>
+            <div class="effect-cover">
+              <h1 class='new-effect-text'>Add your own!</h1>
+            </div>
+          </div>
+
+        </section>
+      </div>
+
+      <div class="contact-wrapper wow fadeInUp">
+        <div class="contact-container">
+          <h1>Want something added to this site?<br><span style='font-size: 15px;'>(or just say hi... im very lonely)</span></h1>
+          <form method="POST" action="http://formspree.io/synclairwang11@yahoo.com">
+            <div class="name-email-container">
+              <input type="text" name="name" placeholder="Name (optional)">
+              <input type="email" name="email" placeholder="Email (optional)">
+            </div>
+            <textarea name="message" placeholder="Message" rows='7' required></textarea>
+            <button type="submit" class='contact-button'>
+              Send <i class='fa fa-paper-plane-o fa-1x'></i>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <footer>
+        <a href="https://github.com/iSyn" target='_blank' style='color: black'>
+          <p>Made with <span style='color: red'>&hearts;</span></p>
+        </a>
+      </footer>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.js"></script>
+    <script src="./foliofx/scripts/typed.js"></script>
+    <script src="./foliofx/scripts/wow.min.js"></script>
+    <script src="./foliofx/scripts/dnd.min.js"></script>
+    <script src="./foliofx/scripts/marquee3k.min.js"></script>
+    <script src="./foliofx/scripts/dragula.min.js"></script>
+    <script src="./foliofx/scripts/baffle.js"></script>
+    <script src="./foliofx/scripts/owl.carousel.min.js"></script>
+    <script src="./foliofx/scripts/particles.js"></script>
+    <script src="./foliofx/scripts/scripts.js"></script>
+
+  </body>
+
+</html>
+
