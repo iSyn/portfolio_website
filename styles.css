@@ -49,14 +49,49 @@ a:hover {
     100%{background-position:0% 50%}
 }
 
-.page-container > h1 {
+.page-content > h1 {
   font-size: 6rem;
   font-family: 'Noto Serif';
+  opacity: 0;
+  animation: fall-in .5s ease-in-out .5s;
+  animation-fill-mode: forwards;
 }
 
-.page-container p{
+
+@-webkit-keyframes fall-in {
+  0% {opacity: 0; transform: translateY(-100px);}
+  50% {opacity: .5;}
+  100% {opacity: 1; visibility: visible; transform: translateY(0px);}
+}
+
+@-moz-keyframes fall-in {
+  0% {opacity: 0; transform: translateY(-100px);}
+  50% {opacity: .5;}
+  100% {opacity: 1; visibility: visible; transform: translateY(0px);}
+}
+
+@keyframes fall-in {
+  0% {opacity: 0; transform: translateY(-100px);}
+  50% {opacity: .5;}
+  100% {opacity: 1; visibility: visible; transform: translateY(0px);}
+}
+
+.page-content p {
   font-size: 2rem;
   font-family: 'Open Sans';
+  animation: fade-in .5s ease-in 2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 
 
