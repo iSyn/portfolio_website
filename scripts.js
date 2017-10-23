@@ -1,5 +1,5 @@
 let pageLoaded = () => {
-  console.log('Hello c: c:')
+  console.log('Hello c:')
 }
 
 
