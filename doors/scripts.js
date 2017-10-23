@@ -2,7 +2,7 @@
 $(function() { // On document ready
 
   console.log('//////////////////////////////////////////////////////')
-  console.log('/     *                 DOORS                  *     /')
+  console.log('/     *                 /DOORS                  *     /')
   console.log('/         *        by Synclair Wang       *          /')
   console.log('//////////////////////////////////////////////////////')
 
@@ -212,22 +212,22 @@ $(function() { // On document ready
   var carpet_shuffle = document.createElement('audio')
   var keyJingle = document.createElement('audio')
 
-  closeDoor.src="doors/assets/sfx/closeDoor.mp3";
+  closeDoor.src="/doors/assets/sfx/closeDoor.mp3";
   closeDoor.preLoad=true;
-  openDoor.src="doors/assets/sfx/openDoor.mp3";
+  openDoor.src="/doors/assets/sfx/openDoor.mp3";
   openDoor.preLoad=true;   
-  lockSound.src='doors/assets/sfx/lock.mp3';
+  lockSound.src='/doors/assets/sfx/lock.mp3';
   lockSound.preLoad=true;
-  shootSound.src='doors/assets/sfx/shoot.wav';
+  shootSound.src='/doors/assets/sfx/shoot.wav';
   shootSound.preLoad=true;
   shootSound.volume=0.5;
-  bgm_main.src='doors/assets/sfx/bgm_main.wav'
+  bgm_main.src='/doors/assets/sfx/bgm_main.wav'
   bgm_main.preLoad=true;
   bgm_main.loop=true;
   bgm_main.volume=0.2;
-  carpet_shuffle.src='doors/assets/sfx/carpet_shuffle.wav'
+  carpet_shuffle.src='/doors/assets/sfx/carpet_shuffle.wav'
   carpet_shuffle.preLoad=true;
-  keyJingle.src='doors/assets/sfx/pickupKey.wav'
+  keyJingle.src='/doors/assets/sfx/pickupKey.wav'
   keyJingle.preLoad=true;
 
  
@@ -241,13 +241,13 @@ $(function() { // On document ready
 
   preloadImages([
     //level one images
-    'doors/assets/L1_closed.png','doors/assets/L1_open.png',
+    '/doors/assets/L1_closed.png','/doors/assets/L1_open.png',
     //level two images
-    'doors/assets/L2_closedLocked.png', 'doors/assets/L2_closedUnlocked.png', 'doors/assets/L2_open.png',
+    '/doors/assets/L2_closedLocked.png', '/doors/assets/L2_closedUnlocked.png', '/doors/assets/L2_open.png',
     //level three images
-    'doors/assets/L3_closed.png', 'doors/assets/L3_open.png',
+    '/doors/assets/L3_closed.png', '/doors/assets/L3_open.png',
     //level four images
-    'doors/assets/L4_keyGone.png', 'doors/assets/L4_matOff.png', 'doors/assets/L4_matOn.png', 'doors/assets/L4_open.png', 'doors/assets/L4_usedKey.png'
+    '/doors/assets/L4_keyGone.png', '/doors/assets/L4_matOff.png', '/doors/assets/L4_matOn.png', '/doors/assets/L4_open.png', '/doors/assets/L4_usedKey.png'
     ])
 
   function clearInputBox() {
@@ -308,31 +308,31 @@ $(function() { // On document ready
 
   function updateGraphics() { // This function updates the graphics
     if (level === 0) {
-      $('.img-area').css('background', 'url(doors/assets/menuDoor.png)')
+      $('.img-area').css('background', 'url(/doors/assets/menuDoor.png)')
     }
     if (level === 1) {
       if (isDoorOpen === false) {
-        $('.img-area').css('background', 'url(doors/assets/L1_closed.png)')
+        $('.img-area').css('background', 'url(/doors/assets/L1_closed.png)')
       } else {
-        $('.img-area').css('background', 'url(doors/assets/L1_open.png)')
+        $('.img-area').css('background', 'url(/doors/assets/L1_open.png)')
       }
     }
     if (level === 2) {
       if (isDoorOpen === false) {
         if (isDoorLocked === true) {
-          $('.img-area').css('background', 'url(doors/assets/L2_closedLocked.png)')
+          $('.img-area').css('background', 'url(/doors/assets/L2_closedLocked.png)')
         } else {
-          $('.img-area').css('background', 'url(doors/assets/L2_closedUnlocked.png)')
+          $('.img-area').css('background', 'url(/doors/assets/L2_closedUnlocked.png)')
         }
       } else {
-        $('.img-area').css('background', 'url(doors/assets/L2_open.png)')
+        $('.img-area').css('background', 'url(/doors/assets/L2_open.png)')
       }
     }
     if (level === 3) {
       if (isDoorOpen === false) {
-        $('.img-area').css('background', 'url(doors/assets/L3_closed.png)')
+        $('.img-area').css('background', 'url(/doors/assets/L3_closed.png)')
       } else {
-        $('.img-area').css('background', 'url(doors/assets/L3_open.png)')
+        $('.img-area').css('background', 'url(/doors/assets/L3_open.png)')
       }
     }
     if (level === 4) {
@@ -340,18 +340,18 @@ $(function() { // On document ready
         if (isDoorLocked) {
           if (!isKeyFound) {
             if (!isMatRemoved) {
-              $('.img-area').css('background', 'url(doors/assets/L4_matOn.png)')
+              $('.img-area').css('background', 'url(/doors/assets/L4_matOn.png)')
             } else {
-              $('.img-area').css('background', 'url(doors/assets/L4_matOff.png)')
+              $('.img-area').css('background', 'url(/doors/assets/L4_matOff.png)')
             }
           } else {
-            $('.img-area').css('background', 'url(doors/assets/L4_keyGone.png)')
+            $('.img-area').css('background', 'url(/doors/assets/L4_keyGone.png)')
           }
         } else {
-          $('.img-area').css('background', 'url(doors/assets/L4_usedKey.png)')
+          $('.img-area').css('background', 'url(/doors/assets/L4_usedKey.png)')
         }
       } else {
-        $('.img-area').css('background', 'url(doors/assets/L4_open.png)')
+        $('.img-area').css('background', 'url(/doors/assets/L4_open.png)')
       }
     }
     if (level === 'secret') {
@@ -420,7 +420,7 @@ $(function() { // On document ready
         openDoor.play()
         o = 0;
         $inputLog.prepend('<li class="reply"> you opened the door </li>')
-        $('.img-area').css('background', 'url(doors/assets/L1_open.png)')
+        $('.img-area').css('background', 'url(/doors/assets/L1_open.png)')
         isDoorOpen = true;
       } else if (foundCloseSynonym) {
         $inputLog.prepend('<li class="reply">The door is already closed...... </li>')
@@ -440,7 +440,7 @@ $(function() { // On document ready
       while ((!foundCloseSynonym) && (c < closeSynonyms.length)) {
         if (currentInput === closeSynonyms[c]) {
           foundCloseSynonym = true;
-          $('.img-area').css('background', 'url(doors/assets/L1_closed.png)')
+          $('.img-area').css('background', 'url(/doors/assets/L1_closed.png)')
         }
         c++;
       }
@@ -1292,13 +1292,13 @@ $(function() { // On document ready
   var boomSound3 = document.createElement('audio')
   var bgm_secret = document.createElement('audio')
 
-  boomSound1.src='doors/assets/sfx/boom1.wav'
+  boomSound1.src='/doors/assets/sfx/boom1.wav'
   boomSound1.preLoad=true;
-  boomSound2.src='doors/assets/sfx/boom2.wav'
+  boomSound2.src='/doors/assets/sfx/boom2.wav'
   boomSound2.preLoad=true;
-  boomSound3.src='doors/assets/sfx/boom3.wav'
+  boomSound3.src='/doors/assets/sfx/boom3.wav'
   boomSound3.preLoad=true;
-  bgm_secret.src='doors/assets/sfx/bgm_secret.wav'
+  bgm_secret.src='/doors/assets/sfx/bgm_secret.wav'
   bgm_secret.preload=true;
   bgm_secret.loop=true;
 
@@ -1330,7 +1330,7 @@ $(function() { // On document ready
         var randWidth = Math.floor((Math.random()*windowWidth)) // Random window width
         var randHeight = Math.floor((Math.random()*windowHeight)) // Random window height
 
-        // MAKING THE DOORS
+        // MAKING THE /DOORS
         if (level === 'secret'){
           var ship = $('<div>')
           ship.addClass('attacking-door')
@@ -1430,11 +1430,11 @@ $(function() { // On document ready
     console.log('YOU ARE NOW IN THE SECRET LEVEL')
 
     $inputLog.prepend('<li class="reply"> -------------------------------------- </li>')
-    $inputLog.prepend('<li class="reply"> LEVEL ??? - BEWARE OF THE RABID DOORS! </li>')
+    $inputLog.prepend('<li class="reply"> LEVEL ??? - BEWARE OF THE RABID /DOORS! </li>')
     $inputLog.prepend('<li class="reply"> -------------------------------------- </li>')
 
     setTimeout(function(){
-      $inputLog.prepend('<li class="error"> GET READY FOR <span class="aliens">DANGEROUS ALIEN DOORS! </span> CLICK THEM TO DESTROY THEM! DONT LET THEM REACH YOU!</li>');
+      $inputLog.prepend('<li class="error"> GET READY FOR <span class="aliens">DANGEROUS ALIEN /DOORS! </span> CLICK THEM TO DESTROY THEM! DONT LET THEM REACH YOU!</li>');
     }, 500);
     setTimeout(function(){
       $inputLog.prepend('<li class="error"> 3... </li>');
