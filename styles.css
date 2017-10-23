@@ -86,7 +86,11 @@ a:hover {
 
 @keyframes fade-in {
   0% {
+    transform: translateX(-40px);
     opacity: 0;
+  }
+  70% {
+    transform: translateX(0px);
   }
   100% {
     opacity: 1;
