@@ -144,7 +144,11 @@ $(function() { // On document ready
     'remove the mat',
     'move mat',
     'move the mat',
-    'lift mat'
+    'lift mat',
+    'lift the mat',
+    'welcome mat',
+    'move welcome mat',
+    'move the welcome mat',
 
   ]
 
@@ -1430,11 +1434,11 @@ $(function() { // On document ready
     console.log('YOU ARE NOW IN THE SECRET LEVEL')
 
     $inputLog.prepend('<li class="reply"> -------------------------------------- </li>')
-    $inputLog.prepend('<li class="reply"> LEVEL ??? - BEWARE OF THE RABID ./DOORS! </li>')
+    $inputLog.prepend('<li class="reply"> LEVEL ??? - BEWARE OF THE RABID DOORS! </li>')
     $inputLog.prepend('<li class="reply"> -------------------------------------- </li>')
 
     setTimeout(function(){
-      $inputLog.prepend('<li class="error"> GET READY FOR <span class="aliens">DANGEROUS ALIEN ./DOORS! </span> CLICK THEM TO DESTROY THEM! DONT LET THEM REACH YOU!</li>');
+      $inputLog.prepend('<li class="error"> GET READY FOR <span class="aliens">DANGEROUS ALIEN DOORS! </span> CLICK THEM TO DESTROY THEM! DONT LET THEM REACH YOU!</li>');
     }, 500);
     setTimeout(function(){
       $inputLog.prepend('<li class="error"> 3... </li>');
