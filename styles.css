@@ -22,80 +22,74 @@ a:hover {
   height: 100vh;
   width: 100vw;
   background-color: snow;
+}
+
+header {
   padding: 0 3rem;
-  color: #222;
-
-  background: linear-gradient(270deg, #fffafa, #d5f0ec, #e6f2c3);
-  background-size: 600% 600%;
-
-  -webkit-animation: background-gradient 30s ease infinite;
-  -moz-animation: background-gradient 30s ease infinite;
-  animation: background-gradient 30s ease infinite;
+  margin-bottom: 2rem;
 }
 
-@-webkit-keyframes background-gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes background-gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes background-gradient {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+header h1 {
+  font-family: 'Oswald', sans-serif;
+  color: #3a3a3a;
+  /*color: #3F51B5; */
+  font-size: 5rem
 }
 
-.page-content > h1 {
-  font-size: 6rem;
-  font-family: 'Noto Serif';
+header p {
+  font-family: 'Raleway', sans-serif;
+}
+
+.project-container {
+  width: 100%;
+  height: 250px;
+  border: 2px solid black;
+  opacity: 0.6;
+  transition: opacity .3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.project-container:hover {
+  opacity: 1;
+}
+
+.project-container:hover .project-info {
+  opacity: 1;
+}
+
+.project-info {
   opacity: 0;
-  animation: fall-in .5s ease-in-out .5s;
-  animation-fill-mode: forwards;
+  color: white;
+  transition: opacity .3s;
+  text-align: center;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.3)
 }
 
-
-@-webkit-keyframes fall-in {
-  0% {opacity: 0; transform: translateY(-100px);}
-  50% {opacity: .5;}
-  100% {opacity: 1; visibility: visible; transform: translateY(0px);}
+.project-name {
+  font-family: 'Oswald', sans-serif;
+  font-size: 3rem;
 }
 
-@-moz-keyframes fall-in {
-  0% {opacity: 0; transform: translateY(-100px);}
-  50% {opacity: .5;}
-  100% {opacity: 1; visibility: visible; transform: translateY(0px);}
+.project-desc {
+  font-family: 'Raleway', sans-serif;
 }
 
-@keyframes fall-in {
-  0% {opacity: 0; transform: translateY(-100px);}
-  50% {opacity: .5;}
-  100% {opacity: 1; visibility: visible; transform: translateY(0px);}
+#project-moreore {
+  background-image: url('./moreore.png');
+  background-size: cover;
 }
 
-.page-content p {
-  font-size: 2rem;
-  font-family: 'Open Sans';
-  animation: fade-in .5s ease-in 2s;
-  animation-fill-mode: forwards;
-  opacity: 0;
+#project-automatetheworld {
+  background-image: url('./automatetheworld.png');
+  background-size: cover;
 }
 
-@keyframes fade-in {
-  0% {
-    transform: translateX(-40px);
-    opacity: 0;
-  }
-  70% {
-    transform: translateX(0px);
-  }
-  100% {
-    opacity: 1;
-  }
+#project-automatetheworld .project-info {
+  background-color: rgba(0, 0, 0, 0.8)
 }
-
-
-
