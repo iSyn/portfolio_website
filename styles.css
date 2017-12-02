@@ -42,7 +42,7 @@ header p {
 
 .project-container {
   width: 100%;
-  height: 250px;
+  height: 300px;
   border: 2px solid black;
   opacity: 0.6;
   transition: opacity .3s;
@@ -92,4 +92,26 @@ header p {
 
 #project-automatetheworld .project-info {
   background-color: rgba(0, 0, 0, 0.8)
+}
+
+#project-doors {
+  background-image: url('./doors2.png');
+  background-size: cover;
+}
+
+#project-doors .project-info {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  padding: 10rem 10rem;
+  text-align: center;
+}
+
+footer h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+footer p {
+  font-family: 'Raleway', sans-serif;
 }
