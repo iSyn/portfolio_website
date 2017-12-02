@@ -18,15 +18,12 @@ a:hover {
 }
 
 .page-container {
-  position: absolute;
-  height: 100vh;
-  width: 100vw;
   background-color: snow;
 }
 
 header {
-  padding: 0 3rem;
-  margin-bottom: 2rem;
+  padding: 0 3rem 2rem 3rem;
+  position: relative;
 }
 
 header h1 {
@@ -114,4 +111,10 @@ footer h1 {
 
 footer p {
   font-family: 'Raleway', sans-serif;
+}
+
+canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
