@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Epilepsy Bubbles</title>
+    <link rel="stylesheet" href="playground.css">
+  </head>
+
+  <style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  canvas {
+    border: 1px solid black;
+  }
+
+  </style>
+
+  <body>
+
+    <canvas></canvas>
+
+
+    <script>
+      window.onload = () => {
+
+      let canvas = document.querySelector('canvas')
+      canvas.width = window.innerWidth
+      canvas.height = window.innerHeight
+
+
+      let c = canvas.getContext('2d')
+
+      let randomX = () => Math.random() * window.innerWidth
+      let randomY = () => Math.random() * window.innerHeight
+
+      let Circle = function(x, y, dx, dy, radius) {
+        this.x = x
+        this.y = y
+        this.dx = dx
+        this.dy = dy
+        this.radius = radius
+
+        this.draw = () => {
+          c.beginPath()
+          c.arc(this.x, this.y, this.radius, 0, Math.PI * 2, false)
+          c.strokeStyle = 'black'
+          c.stroke()
+          c.fill()
+          c.fillStyle = `rgb(${Math.floor(Math.random() * 255) + 1},${Math.floor(Math.random() * 255) + 1},${Math.floor(Math.random() * 255) + 1})`
+        }
+
+        this.update = () => {
+          if (this.x + this.radius > innerWidth || this.x - this.radius < 0) {
+            this.dx = -this.dx
+          }
+
+          if (this.y + this.radius > innerHeight || this.y - this.radius < 0) {
+            this.dy = -this.dy
+          }
+
+          this.x += this.dx
+          this.y += this.dy
+
+          this.draw()
+        }
+      }
+
+      // let circle = new Circle(200, 200, 3, 3, 30)
+      let circleArr = []
+      for (i = 0; i < 200; i++) {
+
+        let radius = Math.floor(Math.random() * (50 - 20 + 1)) + 20
+        let x = Math.random() * (innerWidth - radius * 2) + radius
+        let y = Math.random() * (innerHeight - radius * 2) + radius
+        let dx = (Math.random() - .5) * 10
+        let dy = (Math.random() - .5) * 10
+
+        circleArr.push(new Circle(x, y, dx, dy, radius))
+      }
+
+      let animate = () => {
+        requestAnimationFrame(animate)
+        c.clearRect(0, 0, innerWidth, innerHeight) // clear whole screen
+        for (i in circleArr) circleArr[i].update()
+      }
+
+      animate()
+    }
+
+    </script>
+
+  </body>
+
+</html>
