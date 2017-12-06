@@ -35,8 +35,8 @@ let technologies = [
     tooltip: `<h4>METALSMITHING I</h4><hr/><p><strong>Cost: 3 red science</strong></p><p><i>Enables the building of basic metal items</i></p><hr /><p>3 seconds</p>`,
     duration: 15,
     onFinish: {
-      unlockTech: ['Metalsmithing II', 'Autonomy I', 'Locomotion'],
-      unlockAction: ['BUILD IRON GEAR', 'BUILD COPPER COIL']
+      unlockTech: ['Metalsmithing II', 'Autonomy I', 'Circuitry I'],
+      unlockAction: ['BUILD IRON GEAR', 'BUILD COPPER COIL'],
     }
   },
   {
@@ -49,6 +49,21 @@ let technologies = [
     tooltip: `<h4>METALSMITHING II</h4><hr/><p><strong>Cost: 100 red science</strong></p><p><i>Enables the building of intermediate metal items</i></p><hr /><p>10 seconds</p>`,
     duration: 10,
     requires: 'Metalsmithing I'
+  },
+  {
+    name: 'Circuitry I',
+    // img:
+    price: {
+      RED_SCIENCE: 5
+    },
+    locked: 1,
+    tooltip: `<h4>CIRCUITRY I</h4><hr /><p><strong>Cost: 5 red science</strong></p><p><i>Enables the building of basic circuit boards</i></p><hr /><p>5 seconds</p>`,
+    duration: 5,
+    requires: 'Metalsmithing I',
+    onFinish: {
+      // unlockTech: ['Circuitry II']
+      unlockAction: ['BUILD BASIC CIRCUIT']
+    }
   },
   {
     name: 'Autonomy I',
@@ -81,13 +96,13 @@ let technologies = [
     name: 'Fuel Efficiency I',
     img: 'fuel-efficiency-i',
     price: {
-      RED_SCIENCE: 20
+      RED_SCIENCE: 10
     },
     locked: 0,
     tooltip: `<h4>FUEL EFFICIENCY I</h4><hr/><p><strong>Cost: 10 red science</strong></p><p><i>Fuel is now 1.5x more efficient</i></p><hr/><p>10 seconds</p>`,
     duration: 20,
     onFinish: {
-      unlockTech: ['Fuel Efficiency II']
+      unlockTech: ['Fuel Efficiency II', 'Locomotion']
     },
     onFinishFunc: () => Game.state.stats.resourceNeededMulti *= .5
   },
@@ -104,6 +119,11 @@ let technologies = [
     requires: 'Fuel Efficiency I',
     onFinishFunc: () => Game.state.stats.resourceNeededMulti *= .5
   },
+  /*  ///////////////////////////////////////////////////////////////////
+
+      TRAIN STUFF
+
+  */  ///////////////////////////////////////////////////////////////////
   {
     name: 'Locomotion',
     desc: 'Enables the building of trains',
@@ -114,7 +134,108 @@ let technologies = [
     locked: 1,
     tooltip: `<h4>LOCOMOTION</h4><hr/><p><strong>Cost: 30 red science</strong></p><p><i>Enables the building of trains (auto-exploration)</i></p><hr/><p>30 seconds</p>`,
     duration: 30,
-    requires: 'Metalsmithing I'
+    requires: 'Metalsmithing I & Fuel Efficiency I',
+    onFinish: {
+      unlockTech: ['Train Tank Capacity I', 'Train Speed I', 'Train Fuel Efficiency I'],
+      unlockAction: ['BUILD TRAIN']
+    }
+  },
+  {
+    name: 'Train Tank Capacity I',
+    // img:
+    price: {
+      RED_SCIENCE: 10,
+      BLUE_SCIENCE: 10
+    },
+    locked: 1,
+    tooltip: `<h4>TRAIN TANK CAPACITY I</h4><hr /><p><strong>Cost: 10 red science, 10 blue science</strong></p><p><i>Increases tank capacity by 50</i></p><hr /><p>1 minute</p>`,
+    duration: 60,
+    requires: 'Locomotion',
+    onFinish: {
+      unlockTech: ['Train Tank Capacity II']
+    },
+    onFinishFunc: () => Game.state.trains.maxFuel += 50
+  },
+  {
+    name: 'Train Tank Capacity II',
+    // img:
+    price: {
+      RED_SCIENCE: 70,
+      BLUE_SCIENCE: 70
+    },
+    locked: 1,
+    tooltip: `<h4>TRAIN TANK CAPACITY II</h4><hr /><p><strong>Cost: 70 red science, 70 blue science</strong></p><p><i>Increases tank capacity by 50</i></p><hr /><p>1 minute</p>`,
+    duration: 60,
+    requires: 'Train Tank Capacity I',
+    onFinish: {
+      unlockTech: ['Train Tank Capacity III']
+    },
+    onFinishFunc: () => Game.state.trains.maxFuel += 50
+  },
+  {
+    name: 'Train Tank Capacity III',
+    // img:
+    price: {
+      RED_SCIENCE: 300,
+      BLUE_SCIENCE: 300
+    },
+    locked: 1,
+    tooltip: `<h4>TRAIN TANK CAPACITY III</h4><hr /><p><strong>Cost: 300 red science, 300 blue science</strong></p><p><i>Increases tank capacity by 100</i></p><hr /><p>1 minute</p>`,
+    duration: 60,
+    requires: 'Train Tank Capacity II',
+    onFinishFunc: () => Game.state.trains.maxFuel += 100
+  },
+  {
+    name: 'Train Speed I',
+    price: {
+      RED_SCIENCE: 10,
+      BLUE_SCIENCE: 10
+    },
+    locked: 1,
+    tooltip: `<h4>TRAIN SPEED I</h4><hr /><p><strong>Cost: 10 red science, 10 blue science</strong></p><p><i>Increase train speed</i></p><hr /><p>1 minute</p>`,
+    duration: 60,
+    requires: 'Locomotion',
+    onFinish: {
+      unlockTech: ['Train Speed II']
+    }
+  },
+  {
+    name: 'Train Speed II',
+    price: {
+      RED_SCIENCE: 50,
+      BLUE_SCIENCE: 50
+    },
+    locked: 1,
+    tooltip: `<h4>TRAIN SPEED II</h4><hr /><p><strong>Cost: 50 red science, 50 blue science</strong></p><p><i>Furthur increases train speed</i></p><hr /><p>1 minute</p>`,
+    duration: 60,
+    requires: 'Train Speed I',
+    onFinish: {
+      unlockTech: ['Train Speed III']
+    }
+  },
+  {
+    name: 'Train Speed III',
+    price: {
+      RED_SCIENCE: 300,
+      BLUE_SCIENCE: 300
+    },
+    locked: 1,
+    tooltip: `<h4>TRAIN SPEED III</h4><hr /><p><strong>Cost: 300 red science, 300 blue science</strong></p><p><i>Even furthur increases train speed</i></p><hr /><p>1 minute</p>`,
+    duration: 60,
+    requires: 'Train Speed II',
+    onFinish: {}
+  },
+  {
+    name: 'Train Fuel Efficiency I',
+    price: {
+      RED_SCIENCE: 10,
+      BLUE_SCIENCE: 20
+    },
+    locked: 1,
+    tooltip: `<h4>TRAIN FUEL EFFICIENCY I</h4><hr /><p><strong>Cost: 10 red science, 20 blue science</strong></p><p><i>Lowers the cost of fuel needed</i></p><hr /><p>1 minute</p>`,
+    duration: 60,
+    requires: 'Locomotion',
+    onFinish: {}
   },
   {
     name: 'Enhanced Senses I',
@@ -142,39 +263,29 @@ let technologies = [
     requires: 'Enhanced Senses I'
   },
   {
-    name: 'Intermediate Science',
+    name: 'Science I',
     price: {
       RED_SCIENCE: 100
     },
     img: 'intermediate-science',
     locked: 0,
-    tooltip: `<h4>INTERMEDIATE SCIENCE</h4><hr/><p><strong>Cost: 100 red science</strong></p><p><i>Allows the creation of blue science</i></p><hr/><p>1 minute</p>`,
+    tooltip: `<h4>SCIENCE I</h4><hr/><p><strong>Cost: 100 red science</strong></p><p><i>Allows the creation of blue science</i></p><hr/><p>1 minute</p>`,
     duration: 60,
     onFinish: {
-      unlockTech: ['Advanced Science'],
+      unlockTech: ['SCIENCE II'],
       unlockAction: ['BUILD BLUE SCIENCE']
     }
   },
   {
-    name: 'Advanced Science',
+    name: 'SCIENCE II',
     price: {
       BLUE_SCIENCE: 100
     },
     locked: 1,
-    tooltip: `<h4>ADVANCED SCIENCE</h4><hr/><p><strong>Cost: 100 blue science</strong></p><p><i>Allows the creation of black science</i></p><hr/><p>2 minutes</p>`,
+    tooltip: `<h4>SCIENCE II</h4><hr/><p><strong>Cost: 100 blue science</strong></p><p><i>Allows the creation of black science</i></p><hr/><p>2 minutes</p>`,
     duration: 120,
-    requires: 'Intermediate Science'
+    requires: 'Science I'
   },
-  // {
-  //   name: 'Rocket Science',
-  //   price: {
-  //     BLACK_SCIENCE: 100
-  //   },
-  //   locked: 1,
-  //   tooltip: `<h4>ROCKET SCIENCE</h4><hr /><p><strong>Cost: 100 black science</strong></p><p><i>Allows the creation of rocket fuel</i></p><hr /><p>5 minutes</p>`,
-  //   duration: 300,
-  //   requires: 'Advanced Science'
-  // }
   {
     name: 'Weightlifting I',
     img: 'weightlifting-i',
@@ -199,14 +310,5 @@ let technologies = [
     duration: 60,
     requires: 'Weightlifting I'
   },
-  {
-    name: 'Steel Processing',
-    price: {
-      price: {
-        RED_SCIENCE: 50
-      }
-    }
-  }
-
 
 ]

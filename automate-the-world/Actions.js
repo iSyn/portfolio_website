@@ -96,16 +96,16 @@ let actions = [
     price: [
       {
         type: 'stone',
-        amount: 100
+        amount: 70
       }, {
         type: 'coal',
-        amount: 25
+        amount: 20
       }, {
         type: 'iron',
-        amount: 5
+        amount: 10
       }
     ],
-    tooltip: '<p><strong>Cost: 100 stone, 25 coal, 5 iron</strong></p><p><i>Smelts raw materials</i></p>',
+    tooltip: '<p><strong>Cost: 70 stone, 20 coal, 10 iron</strong></p><p><i>Smelts raw materials</i></p>',
     onclick: 'buildFurnace',
     locked: 0,
     cooldown: 6
@@ -139,14 +139,59 @@ let actions = [
         type: 'ironGear',
         amount: 2,
       }, {
-        type: 'copperCoil',
-        amount: 3
+        type: 'basicCircuit',
+        amount: 2
       }
     ],
-    tooltip: '<p><strong>Cost: 5 iron plates, 2 iron gears, 3 copper coils</strong></p><p><i>Automate the constructing of an item</i></p>',
+    tooltip: '<p><strong>Cost: 5 iron plates, 2 iron gears, 2 basic circuits</strong></p><p><i>Automate the constructing of an item</i></p>',
     onclick: 'buildConstructor',
     locked: 1,
     cooldown: 6
+  }, {
+    name: 'IRON GEAR',
+    tab: 'BUILD',
+    price: [
+      {
+        type: 'ironPlate',
+        amount: 2
+      }
+    ],
+    tooltip: '<p><strong>Cost: 2 iron plates</strong></p><p><i>Used for crafting</i></p>',
+    onclick: 'buildIronGear',
+    locked: 1,
+    nextLine: true
+  }, {
+    name: 'COPPER COIL',
+    tab: 'BUILD',
+    price: [
+      {
+        type: 'copperPlate',
+        amount: 2
+      }
+    ],
+    tooltip: '<p><strong>Cost: 2 copper plates</strong></p><p><i>Used for crafting</i></p>',
+    onclick: 'buildCopperCoil',
+    locked: 1,
+  }, {
+    name: 'TRAIN',
+    tab: 'BUILD',
+    price: [
+      {
+        type: 'ironPlate',
+        amount: 20
+      }, {
+        type: 'ironGear',
+        amount: 10
+      }, {
+        type: 'basicCircuit',
+        amount: 10
+      }
+    ],
+    tooltip: '<p><strong>Cost: 20 iron plates, 10 iron gears, 10 basic circuits</strong></p><p><i>Allows for semi-automatic exploration</i></p>',
+    onclick: 'buildTrain',
+    locked: 1,
+    nextLine: true,
+    duration: 10
   }, {
     name: 'RED SCIENCE',
     tab: 'BUILD',
@@ -178,30 +223,23 @@ let actions = [
     tooltip: '<p><strong>Cost: 3 copper coils, 3 iron gears</strong></p><p><i>Used for intermediate science</i></p>',
     onclick: 'buildBlueScience',
     locked: 1,
+    duration: 5
   }, {
-    name: 'IRON GEAR',
+    name: 'BASIC CIRCUIT',
     tab: 'BUILD',
     price: [
       {
         type: 'ironPlate',
+        amount: 1
+      }, {
+        type: 'copperCoil',
         amount: 2
       }
     ],
-    tooltip: '<p><strong>Cost: 2 iron plates</strong></p><p><i>Used for crafting</i></p>',
-    onclick: 'buildIronGear',
+    tooltip: '<p><strong>Cost: 1 iron plate, 2 copper coils</strong></p><p><i>A basic circuit board</i></p>',
+    onclick: 'buildBasicCircuit',
     locked: 1,
+    duration: 1,
     nextLine: true
-  }, {
-    name: 'COPPER COIL',
-    tab: 'BUILD',
-    price: [
-      {
-        type: 'copperPlate',
-        amount: 2
-      }
-    ],
-    tooltip: '<p><strong>Cost: 2 copper plates</strong></p><p><i>Used for crafting</i></p>',
-    onclick: 'buildCopperCoil',
-    locked: 1,
   }
 ]
