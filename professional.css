@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    color: #3a3a3a;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+body {
+    min-height: 100vh;
+    height: 100%;
+    background: linear-gradient(#fbf9fb, #e3e1e3);
+}
+
+.page-container {
+    position: relative;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    /* border: 1px solid black; */
+    border-top: none;
+    border-bottom: none;
+    padding: 20px;
+    color: #3a3a3a;
+}
+
+.text-color {
+    color: #6e1bd3;
+}
+
+header h1 {
+    font-family: 'Oswald';
+    font-size: 90px;
+}
+
+header p {
+    font-family: 'Source Serif Pro';
+    font-size: 20px;
+}
+
+.link {
+    cursor: pointer;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
+
+.content__portfolio {
+    padding-top: 50px;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.project-container {
+    margin-bottom: 30px;
+}
+
+.project__name {
+    font-family: 'Oswald';
+    font-size: 40px;
+    color: #6e1bd3;
+}
+
+.project__desc, .project__tech {
+    font-family: 'Source Serif Pro';
+}   
+
+.project__tech {
+    opacity: .6;
+}
+
+.small {
+    font-family: 'Source Serif Pro';
+    font-size: 16px;
+}
