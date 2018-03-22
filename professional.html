@@ -20,13 +20,13 @@
 
 		<header>
 			<h1><span class='text-color'>SYNCLAIR</span>WANG</h1>
-			<p> <span class='link link__portfolio'>portfolio</span> | <span class='link link__about'>about</span> | <span class='link link__contact'>contact</span> </p>
+			<p> <span class='link link__portfolio' onclick='Portfolio.changeTab("portfolio")'>portfolio</span> | <span class='link link__about' onclick='Portfolio.changeTab("about")'>about</span> | <span class='link link__contact' onclick='Portfolio.changeTab("contact")'>contact</span> </p>
 		</header>
 
-		<div class="content__portfolio">
+		<div class="content__portfolio content">
 
-			<div class="project-container main">
-				<h1 class='project__name'><a target='_blank' href="https://github.com/iSyn/alfred">Alfred.</a> &nbsp;<span class="project__tech">React, Java, Docker, Spring, SQL, Gradle</span></h1>
+			<div class="project-container main ">
+				<h1 class='project__name'><a onmouseover='Portfolio.showPreview()' onmouseout='Portfolio.hidePreview()' target='_blank' href="https://github.com/iSyn/alfred">Alfred.</a> &nbsp;<span class="project__tech">React, Java, Docker, Spring, SQL, Gradle</span></h1>
 				<!-- <p class='project__tech'>Technologies: React, Java, Docker, Spring, SQL</p> -->
 				<p class='project__desc'>Alfred is a monolithic dashboard application with full CRUD capabilities and RESTful API.</p>
 			</div>
@@ -44,12 +44,28 @@
 				</p>
 			</div>
 
+			<div class="project-container">
+				<h1 class='project__name'>Gamestop Stock Checker &nbsp;<span class="project__tech">Python, BeautifulSoup, Curses</span></h1>
+				<p class='project__desc'>
+					Gamestop Stock Checker was an app I created when I really wanted to buy a hot new product. <br/>
+					Instead of checking the website every 10 minutes, I researched web python and built an app that checks the site for me. 
+					If the item is in stock, it sends the user an email notifying the item is in stock!
+				</p>
+			</div>
+
 			
 			
 		</div>
 
+		<div class="content__about content main">
+			<br/>
+			<p class='project__desc'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis itaque culpa voluptatem alias consectetur cum id beatae dolorem illum eaque, neque ea iure qui error quas odio non ipsum. Numquam.</p>
+		</div>
+
+		<div class="content__contact content"></div>
+
 	</div>
 
-    <script src="main.js"></script>
+    <script src="professional.js"></script>
   </body>
 </html>

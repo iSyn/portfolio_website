@@ -61,11 +61,7 @@ header p {
 
 .project-container {
     margin-bottom: 30px;
-}
-
-.main {
-    border: 4px solid #6e1bd3;
-    padding: 10px;
+    opacity: .7;
 }
 
 .project__name {
@@ -84,3 +80,12 @@ header p {
     font-size: 15px;
     font-family: 'Source Serif Pro';
 }
+
+.main {
+    opacity: 1;
+}
+
+.main h1 a { color: #6e1bd3; }
+.main .project__name { font-size: 60px; }
+.main .project__desc { font-size: 25px; }
+.main .project__tech { font-size: 20px; }
