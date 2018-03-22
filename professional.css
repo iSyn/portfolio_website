@@ -63,10 +63,15 @@ header p {
     margin-bottom: 30px;
 }
 
+.main {
+    border: 4px solid #6e1bd3;
+    padding: 10px;
+}
+
 .project__name {
     font-family: 'Oswald';
     font-size: 40px;
-    color: #6e1bd3;
+    /* color: #6e1bd3; */
 }
 
 .project__desc, .project__tech {
@@ -74,10 +79,8 @@ header p {
 }   
 
 .project__tech {
+    color: #3a3a3a;
     opacity: .6;
-}
-
-.small {
+    font-size: 15px;
     font-family: 'Source Serif Pro';
-    font-size: 16px;
 }
