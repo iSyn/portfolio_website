@@ -5,40 +5,40 @@ for (let i = 0; i < gifs.length; i++) {
     preloadGif.src = `./professional-assets/${gifs[i]}.gif`
 }
 
-let emojis = [
-  "😍",
-  "👍",
-  "🎉",
-  "😎",
-  "😀",
-  "👻",
-  "🙈",
-  "🙉",
-  "🙊",
-  "🙏",
-  "🍟",
-  "🍕",
-  "🎂",
-  "🍰",
-  "🍫",
-  "🍬",
-  "🍭",
-  "💯",
-  "😂",
-  "🔥",
-  "✌️",
-  "👌",
-  "👏",
-  "🙌",
-];
+// let emojis = [
+//   "😍",
+//   "👍",
+//   "🎉",
+//   "😎",
+//   "😀",
+//   "👻",
+//   "🙈",
+//   "🙉",
+//   "🙊",
+//   "🙏",
+//   "🍟",
+//   "🍕",
+//   "🎂",
+//   "🍰",
+//   "🍫",
+//   "🍬",
+//   "🍭",
+//   "💯",
+//   "😂",
+//   "🔥",
+//   "✌️",
+//   "👌",
+//   "👏",
+//   "🙌",
+// ];
 
-window.onscroll = () => {
-    let randomNum = Math.floor(Math.random() * emojis.length)
-    let selectedEmoji = emojis[randomNum];
+// window.onscroll = () => {
+//     let randomNum = Math.floor(Math.random() * emojis.length)
+//     let selectedEmoji = emojis[randomNum];
 
-    let emoji = document.querySelector('.emoji')
-    emoji.innerHTML = selectedEmoji;
-}
+//     let emoji = document.querySelector('.emoji')
+//     emoji.innerHTML = selectedEmoji;
+// }
 
 let alfredImg = document.querySelector('.alfred-img')
 alfredImg.addEventListener('mouseover', () => {
