@@ -161,6 +161,7 @@ header p {
     }
     .summary2 {
         flex-flow: column nowrap;
+        text-align: center;
     }
     .project-container {
         flex-flow: column nowrap;
