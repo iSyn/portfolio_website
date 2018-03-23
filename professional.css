@@ -62,17 +62,12 @@ header p {
     flex-flow: column nowrap;
 }
 
-.summary {
-    padding-bottom: 50px;
-    font-family: 'Source Serif Pro';
-}
-
-
 .summary2 {
     padding-bottom: 50px;
     font-family: 'Source Serif Pro';
     display: flex;
     flex-flow: row nowrap;
+    align-items: center;
 }
 
 .summary2 p {
@@ -87,8 +82,9 @@ header p {
 }
 
 .project-info {
-    width: 40%;
-    margin-right: 90px;
+    width: 50%;
+    padding-right: 20px;
+    /* margin-right: 90px; */
 }
 
 .small .project-info {
@@ -126,8 +122,8 @@ header p {
 }
 
 .emoji {
-    font-size: xx-large;
-    animation: waving .5s infinite linear alternate;
+    font-size: 50px;
+    animation: waving .5s infinite ease-in-out alternate;
     transform: rotate(0deg);
 }
 

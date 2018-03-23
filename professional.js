@@ -1,3 +1,10 @@
+let gifs = ['rptt-gif', 'alfred-gif']
+
+for (let i = 0; i < gifs.length; i++) {
+    let preloadGif = new Image()
+    preloadGif.src = `./professional-assets/${gifs[i]}.gif`
+}
+
 let emojis = [
   "😍",
   "👍",
