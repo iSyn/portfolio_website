@@ -148,3 +148,26 @@ header p {
 .selected {
     display: block;
 }
+
+@media screen and (max-width: 1200px) {
+    .page-container {
+        width: 85%;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    header {
+        text-align: center;
+    }
+    .summary2 {
+        flex-flow: column nowrap;
+    }
+    .project-container {
+        flex-flow: column nowrap;
+        text-align: center;
+        align-items: center;
+    }
+    .project-info {
+        width: 100%;
+    }
+}
