@@ -5,7 +5,7 @@
 }
 
 a {
-    color: #3a3a3a;
+    color: #6e1bd3;
     text-decoration: none;
 }
 
@@ -73,7 +73,7 @@ header p {
 .summary2 p {
     padding-left: 20px;
     font-size: 20px;
-    color: #6e1bd3;
+    color: #3a3a3a;
 }
 
 .project-container {
@@ -141,4 +141,5 @@ header p {
 .more-ore-link {
     text-decoration: underline;
     font-weight: bold;
+    color: #3a3a3a;
 }
