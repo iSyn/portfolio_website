@@ -55,6 +55,7 @@ header p {
 
 .content {
     padding-top: 50px;
+    display: none;
 }
 
 .content__portfolio {
@@ -125,16 +126,16 @@ header p {
 
 .emoji {
     font-size: 50px;
-    animation: waving .5s infinite ease-in-out alternate;
-    transform: rotate(0deg);
+    animation: waving 1s infinite ease-in-out alternate;
+    transform: rotate(10deg);
 }
 
 @keyframes waving {
     0% {
-        transform: rotate(0deg)
+        transform: rotate(10deg)
     }
     100% {
-        transform: rotate(25deg)
+        transform: rotate(60deg)
     }
 }
 
@@ -142,4 +143,8 @@ header p {
     text-decoration: underline;
     font-weight: bold;
     color: #3a3a3a;
+}
+
+.selected {
+    display: block;
 }

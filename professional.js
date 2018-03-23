@@ -5,41 +5,6 @@ for (let i = 0; i < gifs.length; i++) {
     preloadGif.src = `./professional-assets/${gifs[i]}.gif`
 }
 
-// let emojis = [
-//   "😍",
-//   "👍",
-//   "🎉",
-//   "😎",
-//   "😀",
-//   "👻",
-//   "🙈",
-//   "🙉",
-//   "🙊",
-//   "🙏",
-//   "🍟",
-//   "🍕",
-//   "🎂",
-//   "🍰",
-//   "🍫",
-//   "🍬",
-//   "🍭",
-//   "💯",
-//   "😂",
-//   "🔥",
-//   "✌️",
-//   "👌",
-//   "👏",
-//   "🙌",
-// ];
-
-// window.onscroll = () => {
-//     let randomNum = Math.floor(Math.random() * emojis.length)
-//     let selectedEmoji = emojis[randomNum];
-
-//     let emoji = document.querySelector('.emoji')
-//     emoji.innerHTML = selectedEmoji;
-// }
-
 let alfredImg = document.querySelector('.alfred-img')
 alfredImg.addEventListener('mouseover', () => {
     alfredImg.src = './professional-assets/alfred-gif.gif'
@@ -56,3 +21,16 @@ rpttImg.addEventListener("mouseout", () => {
   rpttImg.src = "./professional-assets/rptt-img.png";
 });
 
+let currentTab = 'portfolio'
+
+let changeTab = (selectedTab) => {
+    
+    if (selectedTab != currentTab) {
+        currentTab = selectedTab
+        console.log('changing tab to', currentTab)
+        let all = document.querySelectorAll('.content')
+        let tab = document.querySelector(`.content__${selectedTab}`);
+        all.forEach((single) => { single.style.display = 'none' })
+        tab.style.display = 'block'
+    }
+}

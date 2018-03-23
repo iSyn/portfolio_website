@@ -19,76 +19,79 @@
 	<div class="page-container">
 
 		<header>
-			<h1><span class='text-color'>SYNCLAIR</span>WANG</h1>
-			<p> <span class='link link__portfolio' onclick='Portfolio.changeTab("portfolio")'>portfolio</span> | <span class='link link__contact' onclick='Portfolio.changeTab("contact")'>contact</span> </p>
+			<h1><span class='text-color'>SYNCLAIR</span> WANG</h1>
+			<p> <span class='link link__portfolio' onclick='changeTab("portfolio")'>portfolio</span> | <span class='link link__contact' onclick='changeTab("contact")'>contact</span> </p>
 		</header>
 
-		<div class="content__portfolio content">
+		<div class="content-container">
+			<div class="content__portfolio content selected">
 
-			<div class="summary2">
-				<span class='emoji'>👋</span>
-				<p>
-					I am a full stack developer with a passion for fluid UX and design. <br/>
-					In my free time, I like to lift heavy things up and put them down as well
-					as work on my GaaS app <a class='more-ore-link' href="https://github.com/iSyn/More-Ore">More Ore</a>.
-				</p>
-			</div>
-
-			<div class="project-container ">
-				<div class="project-info">
-					<h1 class='project__name'><a onmouseover='Portfolio.showPreview()' onmouseout='Portfolio.hidePreview()' target='_blank' href="https://github.com/iSyn/alfred">Alfred.</a></h1>
-					<p class='project__tech'>React, Java, Docker, Spring, SQL</p>
-					<br/>
-					<p class='project__desc'>
-						Alfred is a monolithic dashboard application with full CRUD capabilities and RESTful API.
-						<br/> <br/>
-						Hover over the image for a quick demo!
+				<div class="summary2">
+					<span class='emoji'>👋</span>
+					<p>
+						I am a full stack developer with a passion for fluid UX and design. <br/>
+						In my free time, I like to lift heavy things up and put them down as well
+						as work on my GaaS app <a class='more-ore-link' href="https://github.com/iSyn/More-Ore">More Ore</a>.
 					</p>
 				</div>
-				<img class='project-image alfred-img' src="./professional-assets/alfred-img.png" alt="">
-			</div>
-			
-			<div class="project-container">
-				<div class="project-info">
-					<h1 class='project__name'><a target='_blank' href="https://github.com/iSyn/reAsk">reAsk</a></h1>
-					<p class="project__tech">React, Node, Express, MongoDB, Websockets</p>
-					<br/>
-					<p class='project__desc'>reAsk is a web app targeted for curious students who don't want to interrupt the instructors lesson.</p>
+
+				<div class="project-container ">
+					<div class="project-info">
+						<h1 class='project__name'><a onmouseover='Portfolio.showPreview()' onmouseout='Portfolio.hidePreview()' target='_blank' href="https://github.com/iSyn/alfred">Alfred.</a></h1>
+						<p class='project__tech'>React, Java, Docker, Spring, SQL</p>
+						<br/>
+						<p class='project__desc'>
+							Alfred is a monolithic dashboard application with full CRUD capabilities and RESTful API.
+							<br/> <br/>
+							Hover over the image for a quick demo!
+						</p>
+					</div>
+					<img class='project-image alfred-img' src="./professional-assets/alfred-img.png" alt="">
 				</div>
-				<img class='project-image' src="./professional-assets/reask-img.png" alt="">
-			</div>
-
-			<div class="project-container">
-				<div class="project-info">
-					<h1 class='project__name'><a target='_blank' href="https://github.com/iSyn/rock-paper-tac-toe">Rock Paper Tac Toe</a></h1>
-					<p class="project__tech">Java, Processing</p>
-					<p class='project__desc'>
-						Rock Paper Tac Toe is a java game made while tinkering with Processing. <br/>
-						First you play rock paper scissor. The winner then makes a move in tic tac toe.
-						<br/> <br/>
-						Hover over the image for a quick demo!
-					</p>
+				
+				<div class="project-container">
+					<div class="project-info">
+						<h1 class='project__name'><a target='_blank' href="https://github.com/iSyn/reAsk">reAsk</a></h1>
+						<p class="project__tech">React, Node, Express, MongoDB, Websockets</p>
+						<br/>
+						<p class='project__desc'>reAsk is a web app targeted for curious students who don't want to interrupt the instructors lesson.</p>
+					</div>
+					<img class='project-image' src="./professional-assets/reask-img.png" alt="">
 				</div>
-				<img class='project-image rptt-img' src="./professional-assets/rptt-img.png" alt="">
-			</div>
 
-			<div class="project-container small">
-				<div class="project-info">
-					<h1 class='project__name'>Gamestop Stock Checker &nbsp;<span class="project__tech">Python, BeautifulSoup, Curses</span></h1>
-					<p class='project__desc'>
-						Gamestop Stock Checker was an app I created when I really wanted to buy a hot new product. <br/>
-						Instead of checking the website every 10 minutes, I taught myself python and built an app that checks the site for me. 
-						If the item is in stock, it sends the user an email notifying the item is in stock!
-					</p>
+				<div class="project-container">
+					<div class="project-info">
+						<h1 class='project__name'><a target='_blank' href="https://github.com/iSyn/rock-paper-tac-toe">Rock Paper Tac Toe</a></h1>
+						<p class="project__tech">Java, Processing</p>
+						<br/>
+						<p class='project__desc'>
+							Rock Paper Tac Toe is a java game made while tinkering with Processing. <br/>
+							First you play rock paper scissor. The winner then makes a move in tic tac toe.
+							<br/> <br/>
+							Hover over the image for a quick demo!
+						</p>
+					</div>
+					<img class='project-image rptt-img' src="./professional-assets/rptt-img.png" alt="">
 				</div>
+
+				<div class="project-container small">
+					<div class="project-info">
+						<h1 class='project__name'>Gamestop Stock Checker &nbsp;<span class="project__tech">Python, BeautifulSoup, Curses</span></h1>
+						<p class='project__desc'>
+							Gamestop Stock Checker was an app I created when I really wanted to buy a hot new product. <br/>
+							Instead of checking the website every 10 minutes, I taught myself python and built an app that checks the site for me. 
+							If the item is in stock, it sends the user an email notifying the item is in stock!
+						</p>
+					</div>
+				</div>
+
+				
+				
 			</div>
 
-			
-			
-		</div>
-
-		<div style='display: none' class="content__contact content">
-			<h1>You can find me at:</h1>
+			<div class="content__contact content">
+				<h1>You can find me at:</h1>
+			</div>
 		</div>
 
 	</div>
