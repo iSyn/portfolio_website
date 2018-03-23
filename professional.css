@@ -153,6 +153,9 @@ header p {
 }
 
 @media screen and (max-width: 950px) {
+    .page-container {
+        width: 100%;
+    }
     header {
         text-align: center;
     }
