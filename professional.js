@@ -1,69 +1,52 @@
-let Portfolio = {}
+let emojis = [
+  "😍",
+  "👍",
+  "🎉",
+  "😎",
+  "😀",
+  "👻",
+  "🙈",
+  "🙉",
+  "🙊",
+  "👊",
+  "🙏",
+  "🍟",
+  "🍕",
+  "🎂",
+  "🍰",
+  "🍫",
+  "🍬",
+  "🍭",
+  "💯",
+  "😂",
+  "🔥",
+  "✌️",
+  "👌",
+  "👏",
+  "🙌",
+];
 
-Portfolio.launch = () => {
+window.onscroll = () => {
+    let randomNum = Math.floor(Math.random() * emojis.length)
+    let selectedEmoji = emojis[randomNum];
 
-    Portfolio.changeTab = (tab) => {
-        let allProjects = document.querySelectorAll(".content");
-        allProjects.forEach((project) => { project.style.display = 'none'});
-        let selectedTab = `.content__${tab}`
-        document.querySelector(selectedTab).style.display = 'block'
-    }
-
-    Portfolio.showPreview = () => {
-        let preview = document.createElement('div')
-        let mouse = {
-            x: event.clientX,
-            y: event.clientY
-        }
-    }
-
-    // function handleMouseMove(event) {
-    //     var dot, eventDoc, doc, body, pageX, pageY;
-
-    //     event = event || window.event; // IE-ism
-
-    //     // If pageX/Y aren't available and clientX/Y are,
-    //     // calculate pageX/Y - logic taken from jQuery.
-    //     // (This is to support old IE)
-    //     if (event.pageX == null && event.clientX != null) {
-    //         eventDoc = (event.target && event.target.ownerDocument) || document;
-    //         doc = eventDoc.documentElement;
-    //         body = eventDoc.body;
-
-    //         event.pageX = event.clientX +
-    //           (doc && doc.scrollLeft || body && body.scrollLeft || 0) -
-    //           (doc && doc.clientLeft || body && body.clientLeft || 0);
-    //         event.pageY = event.clientY +
-    //           (doc && doc.scrollTop  || body && body.scrollTop  || 0) -
-    //           (doc && doc.clientTop  || body && body.clientTop  || 0 );
-    //     }
-
-    //     // Use event.pageX / event.pageY here
-    // }
-
-    Portfolio.hidePreview = () => {
-
-    }
+    let emoji = document.querySelector('.emoji')
+    emoji.innerHTML = selectedEmoji;
 }
 
+let alfredImg = document.querySelector('.alfred-img')
+alfredImg.addEventListener('mouseover', () => {
+    alfredImg.src = './professional-assets/alfred-gif.gif'
+})
+alfredImg.addEventListener('mouseout', () => {
+    alfredImg.src = './professional-assets/alfred-img.png'
+})
 
-// window.addEventListener('DOMContentLoaded', () => {
-    
-//     let state = {
-//         selectedTab: 'portfolio'
-//     }
+let rpttImg = document.querySelector(".rptt-img");
+rpttImg.addEventListener("mouseover", () => {
+  rpttImg.src = "./professional-assets/rptt-gif.gif";
+});
+rpttImg.addEventListener("mouseout", () => {
+  rpttImg.src = "./professional-assets/rptt-img.png";
+});
 
-//     if (state.selectedTab == 'portfolio') {
-//         document.querySelector('.content__portfolio').style.display = ''
-//     }
-
-//     let changeTab = (tab) => {
-//         let allProjects = document.querySelectorAll('.content')
-//         allProjects.forEach((project) => { project.style.display = 'none'})
-//         let selectedTab = `content__${tab}`
-//         console.log('changing tab to', selectedTab)
-//     }
-
-// })
-
-window.onload = () => { Portfolio.launch() }

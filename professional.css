@@ -53,15 +53,55 @@ header p {
     text-decoration: underline;
 }
 
-.content__portfolio {
+.content {
     padding-top: 50px;
+}
+
+.content__portfolio {
     display: flex;
     flex-flow: column nowrap;
 }
 
+.summary {
+    padding-bottom: 50px;
+    font-family: 'Source Serif Pro';
+}
+
+
+.summary2 {
+    padding-bottom: 50px;
+    font-family: 'Source Serif Pro';
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.summary2 p {
+    padding-left: 20px;
+}
+
 .project-container {
     margin-bottom: 30px;
-    opacity: .7;
+    /* opacity: .7; */
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.project-info {
+    width: 40%;
+    margin-right: 90px;
+}
+
+.small .project-info {
+    width: 100%;
+    margin-right: 0;
+}
+
+.project-image {
+    width: 400px;
+    height: 230px;
+
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 1px;
 }
 
 .project__name {
@@ -85,7 +125,17 @@ header p {
     opacity: 1;
 }
 
-/* .main h1 a { color: #6e1bd3; }
-.main .project__name { font-size: 60px; }
-.main .project__desc { font-size: 25px; }
-.main .project__tech { font-size: 20px; } */
+.emoji {
+    font-size: xx-large;
+    animation: waving .5s infinite linear alternate;
+    transform: rotate(0deg);
+}
+
+@keyframes waving {
+    0% {
+        transform: rotate(0deg)
+    }
+    100% {
+        transform: rotate(25deg)
+    }
+}
