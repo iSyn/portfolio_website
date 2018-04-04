@@ -152,6 +152,14 @@ header p {
     }
 }
 
+.content__contact h1, p{
+    font-family: 'Source Serif Pro';
+}
+
+.content__contact p {
+    font-size: 30px;
+}
+
 @media screen and (max-width: 950px) {
     .page-container {
         width: 100%;
@@ -176,3 +184,4 @@ header p {
         width: 100%;
     }
 }
+
