@@ -303,3 +303,35 @@ header {
 .social-buttons i:hover {
     transform: scale(1.1)
 }
+
+@media screen and (max-width: 1200px) {
+    .project-item {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .project-item {
+        width: 95%;
+    }
+
+    .about-content, .about-header {
+        width: 70%;
+    }
+    
+    #about .section-container {
+        flex-flow: column nowrap;
+        padding: 0 0 50px 0;
+    }
+    #about .section-container div {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+    }
+
+    .about-header hr {
+        margin-bottom: 10px;
+    }
+} 
+

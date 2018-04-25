@@ -1,4 +1,5 @@
 window.sr = ScrollReveal({
-    reset: true
+    reset: true,
+    distance: '30px'
 });
 sr.reveal('.project-item');
