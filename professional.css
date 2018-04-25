@@ -226,7 +226,7 @@ header {
 .project-item {
     position: relative;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) !important;
     width: 60%;
     height: 250px;
     background: white;
