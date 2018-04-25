@@ -1,187 +1,27 @@
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-a {
-    color: #6e1bd3;
-    text-decoration: none;
+header {
+
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-body {
-    min-height: 100vh;
-    height: 100%;
-    background: linear-gradient(#fbf9fb, #e3e1e3);
-}
-
-.page-container {
-    position: relative;
-    width: 60%;
-    left: 50%;
-    transform: translateX(-50%);
-    padding: 20px;
-    color: #3a3a3a;
-}
-
-.text-color {
-    color: #6e1bd3;
-}
-
-header h1 {
-    font-family: 'Oswald';
-    font-size: 90px;
-}
-
-header p {
-    font-family: 'Source Serif Pro';
-    font-size: 20px;
-}
-
-.link {
-    cursor: pointer;
-}
-
-.link:hover {
-    text-decoration: underline;
-}
-
-.content {
-    padding-top: 50px;
-    display: none;
-}
-
-.content__portfolio {
+.stripes {
     display: flex;
     flex-flow: column nowrap;
 }
 
-.summary2 {
-    padding-bottom: 50px;
-    font-family: 'Source Serif Pro';
-    display: flex;
-    flex-flow: row nowrap;
-    align-items: center;
-}
-
-.summary2 p {
-    padding-left: 20px;
-    font-size: 20px;
-    color: #3a3a3a;
-}
-
-.project-container {
-    margin-bottom: 30px;
-    /* opacity: .7; */
-    display: flex;
-    flex-flow: row nowrap;
-}
-
-.project-info {
-    width: 50%;
-    padding-right: 20px;
-    /* margin-right: 90px; */
-}
-
-.small .project-info {
+.stripe {
+    height: 150px;
     width: 100%;
-    margin-right: 0;
 }
 
-.project-image {
-    width: 400px;
-    height: 230px;
-
-    border: 2px solid rgba(0, 0, 0, 0.3);
-    padding: 1px;
+.stripe:nth-child(1) {
+    background: #7280fd;
 }
 
-.project__name {
-    font-family: 'Oswald';
-    font-size: 40px;
-    /* color: #6e1bd3; */
+.stripe:nth-child(2) {
+    background: #487dff;
 }
-
-.project__desc, .project__tech {
-    font-family: 'Source Serif Pro';
-}   
-
-.project__tech {
-    color: #3a3a3a;
-    opacity: .6;
-    font-size: 15px;
-    font-family: 'Source Serif Pro';
-}
-
-.main {
-    opacity: 1;
-}
-
-.emoji {
-    font-size: 50px;
-    animation: waving 1s infinite ease-in-out alternate;
-    transform: rotate(10deg);
-}
-
-@keyframes waving {
-    0% {
-        transform: rotate(10deg)
-    }
-    100% {
-        transform: rotate(60deg)
-    }
-}
-
-.more-ore-link {
-    text-decoration: underline;
-    font-weight: bold;
-    color: #3a3a3a;
-}
-
-.selected {
-    display: block;
-}
-
-@media screen and (max-width: 1200px) {
-    .page-container {
-        width: 85%;
-    }
-}
-
-.content__contact h1, p{
-    font-family: 'Source Serif Pro';
-}
-
-.content__contact p {
-    font-size: 30px;
-}
-
-@media screen and (max-width: 950px) {
-    .page-container {
-        width: 100%;
-    }
-    header {
-        text-align: center;
-    }
-
-    header h1 {
-        font-size: 70px;
-    }
-    .summary2 {
-        flex-flow: column nowrap;
-        text-align: center;
-    }
-    .project-container {
-        flex-flow: column nowrap;
-        text-align: center;
-        align-items: center;
-    }
-    .project-info {
-        width: 100%;
-    }
-}
-
