@@ -268,6 +268,11 @@ header {
 }
 
 .social-buttons i {
-    padding: 10px;
+    padding: 10px 20px;
     cursor: pointer;
+    transition: transform .3s;
+}
+
+.social-buttons i:hover {
+    transform: scale(1.1)
 }
