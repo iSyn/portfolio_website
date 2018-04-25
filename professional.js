@@ -1,5 +1,8 @@
 window.sr = ScrollReveal({
-    reset: true,
-    distance: '30px'
 });
 sr.reveal('.project-item');
+
+let redirect = () => {
+    let win = window.open('https://github.com/iSyn', '_blank');
+    win.focus();
+}
