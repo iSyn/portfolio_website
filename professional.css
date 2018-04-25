@@ -166,11 +166,15 @@ header {
 .item-timeline .line {
     position: relative;
     background: #487dff;
-    background: linear-gradient(#487dff, #487dff, #ecf0f1);
+    /* background: linear-gradient(#487dff, #487dff, #ecf0f1); */
     width: 5px;
     height: 100%;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.item-timeline .line.last{
+    background: linear-gradient(#487dff, #487dff, #ecf0f1);    
 }
 
 .circle i {
