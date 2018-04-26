@@ -51,6 +51,11 @@ header {
 .stripe:nth-child(2), .stripe:nth-child(5), .stripe:nth-child(8) { background: #487dff; }
 .stripe:nth-child(3), .stripe:nth-child(6), .stripe:nth-child(9) { background: linear-gradient(45deg, #487dff, #7280fd) }
 
+.stripe:nth-child(7) { display: none; }
+.stripe:nth-child(8) { display: none; }
+.stripe:nth-child(9) { display: none; }
+
+
 .hand {
     animation: waving .5s infinite ease-in-out alternate;
     transform: rotate(0deg);
@@ -349,6 +354,9 @@ header {
     .header-text p {
         width: 100%;
     }
+    .about-content {
+        width: 90%;
+    }
     .hand {
         display: none;
     }
@@ -376,4 +384,14 @@ header {
     #experiences div .experience-item {
         width: 90%;
     }
+
+    .github-link p {
+        width: 87%;
+    }
+
+    .stripe:nth-child(7) { display: block; }
+    .stripe:nth-child(8) { display: block; }
+    .stripe:nth-child(9) { display: block; }
+
+    
 }
