@@ -356,6 +356,24 @@ header {
         display: none;
     }
     .project-item {
-        height: 270px;
+        /* height: 270px; */
+        height: auto;
+        width: 87%;
+    }
+    .item-timeline {
+        display: none;
+    }
+    .experience-item .item-information {
+        width: 100%;
+        left: 50%;
+        position: relative;
+        transform: translateX(-50%);
+    }
+    .experience-item .item-date {
+        display: none;
+    }
+
+    #experiences div .experience-item {
+        width: 90%;
     }
 }
