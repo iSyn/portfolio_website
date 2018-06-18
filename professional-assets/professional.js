@@ -85,4 +85,19 @@ window.addEventListener('DOMContentLoaded', () => {
     setInterval(() => {
         randomExpression()
     }, 6.5 * 1000)
+
+    let frame = document.querySelector('.frame')
+    let pos = frame.getBoundingClientRect()
+    document.querySelector('#contact').style.paddingTop = `${pos.height + 10}px`
+    window.onscroll = () => {
+        console.log(pos.top)
+        console.log(window.pageYOffset)
+        if (window.pageYOffset >= pos.top - 40) {
+            frame.classList.add('sticky')
+            document.querySelector('#about').style.paddingTop = `${pos.height}px`
+        } else {
+            frame.classList.remove('sticky')
+            document.querySelector('#about').style.paddingTop = `0px`
+        }
+    }
 })
