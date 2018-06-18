@@ -7,13 +7,14 @@ let redirect = () => {
     win.focus();
 }
 
+let count = 0
 let randomExpression = () => {
 
     let expressions = [
-        'wiggle eyebrows',
         'shocked',
-        'curious',
-        'angry'
+        'wiggle eyebrows',
+        'angry',
+        'curious'
     ]
 
     let eyebrows = document.querySelectorAll('.eyebrow')
@@ -24,7 +25,13 @@ let randomExpression = () => {
     let neck = document.querySelector('.neck')
 
     let num = Math.floor(Math.random() * expressions.length);
+
     let selected = expressions[num]
+    if (count < expressions.length) {
+        selected = expressions[count]
+        count++
+    }
+
 
     if (selected === 'wiggle eyebrows') {
         eyebrows.forEach(eyebrow => eyebrow.classList.add('wiggle-eyebrows'))
