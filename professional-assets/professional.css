@@ -415,6 +415,7 @@ header {
 
 /* FRAME */
 .frame {
+    pointer-events: none;
     font-size: 10%;
 
     display: block;
