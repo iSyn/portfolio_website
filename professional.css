@@ -407,7 +407,6 @@ header {
 .frame {
     font-size: 10%;
     z-index: 10;
-    position: fixed;
     bottom: 0;
     left: 0; }
     .frame .head {
