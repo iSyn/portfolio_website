@@ -100,14 +100,18 @@ window.addEventListener('DOMContentLoaded', () => {
     document.querySelector('#contact').style.paddingTop = `${pos.height + 10}px`
     if (!isMobile) {
         window.onscroll = () => {
-            console.log(pos.top)
-            console.log(window.pageYOffset)
+            
             if (window.pageYOffset >= pos.top - 40) {
                 frame.classList.add('sticky')
                 document.querySelector('#about').style.paddingTop = `${pos.height}px`
             } else {
                 frame.classList.remove('sticky')
                 document.querySelector('#about').style.paddingTop = `0px`
+            }
+            if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
+                frame.classList.add('bottom')
+            } else {
+                frame.classList.remove('bottom')
             }
         }
     }

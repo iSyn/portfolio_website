@@ -408,12 +408,16 @@ header {
     
 }
 
-.sticky {
+.frame.sticky {
   position: fixed !important;
   left: 10% !important;
   transform: translateX(-50%);
   top: 0;
   padding-top: 40px;
+}
+
+.frame.bottom {
+  left: 50% !important;
 }
 
 
@@ -422,12 +426,12 @@ header {
     pointer-events: none;
     font-size: 10%;
     padding-bottom: 10px;
-    transition: font-size .3s;
+    transition: left .2s;
     display: block;
     z-index: 10;
     bottom: 0;
     /* padding-top: 20px; */
-    left: 0; }
+    left: 50% !important; }
     .frame .head {
       position: relative;
       height: 18.750em;
