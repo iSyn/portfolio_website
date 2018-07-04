@@ -307,6 +307,44 @@ header {
     display: flex;
     flex-flow: row nowrap;
     justify-content: center;
+    align-items: center;
+}
+
+.social-buttons h1 {
+  font-size: 100px;
+  position: relative;
+  opacity: 0;
+  transition: opacity .2s;
+}
+
+.left-side {
+  animation: poke .3s ease-in-out infinite alternate;
+}
+
+.right-side {
+  animation: poke-flip .3s ease-in-out infinite alternate;
+}
+
+.show {
+  opacity: 1 !important;
+}
+
+@keyframes poke {
+  from {
+    transform: translateX(0px)
+  }
+  to {
+    transform: translateX(-50px)
+  }
+}
+
+@keyframes poke-flip {
+  from {
+    transform: translateX(0px)
+  }
+  to {
+    transform: translateX(50px)
+  }
 }
 
 .social-buttons i {
@@ -428,7 +466,7 @@ header {
     pointer-events: none;
     font-size: 10%;
     padding-bottom: 10px;
-    transition: left .2s;
+    transition: left .2s, transform .2s;
     display: block;
     z-index: 10;
     bottom: 0;

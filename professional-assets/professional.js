@@ -110,8 +110,16 @@ window.addEventListener('DOMContentLoaded', () => {
             }
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
                 frame.classList.add('bottom')
+                let hands = document.querySelectorAll('.pokey')
+                hands.forEach(hand => {
+                    hand.classList.add('show')
+                })
             } else {
                 frame.classList.remove('bottom')
+                let hands = document.querySelectorAll('.pokey')
+                hands.forEach(hand => {
+                    hand.classList.remove('show')
+                })
             }
         }
     }
