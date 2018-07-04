@@ -423,6 +423,8 @@ header {
 
 /* FRAME */
 .frame {
+    position: relative;
+    transform: translateX(-50%);
     pointer-events: none;
     font-size: 10%;
     padding-bottom: 10px;
