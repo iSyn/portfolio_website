@@ -108,6 +108,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 frame.classList.remove('sticky')
                 document.querySelector('#about').style.paddingTop = `0px`
             }
+            console.log(window.innerHeight + window.scrollY, '>=', document.body.offsetHeight)
             if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
                 frame.classList.add('bottom')
                 let hands = document.querySelectorAll('.pokey')
