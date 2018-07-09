@@ -4,6 +4,10 @@
 a { text-decoration: none; cursor: pointer; }
 a:hover { text-decoration: underline; }
 
+.wow {
+  visibility: hidden;
+}
+
 .container {
   width: 100vw;
   overflow: hidden;
