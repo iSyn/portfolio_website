@@ -5,6 +5,8 @@ let redirect = () => {
     win.focus();
 }
 
+console.log('Hire me')
+
 let count = 0
 let randomExpression = () => {
 
