@@ -78,6 +78,9 @@ let randomExpression = () => {
 }
 
 window.addEventListener('DOMContentLoaded', () => {
+    
+    console.log('ARE YOU SOMEONE COOL? HMU... HMU IF YOURE JUST OKAY TOO')
+
     setTimeout(() => {
         randomExpression()
     }, 100)
@@ -108,7 +111,7 @@ window.addEventListener('DOMContentLoaded', () => {
                 frame.classList.remove('sticky')
                 document.querySelector('#about').style.paddingTop = `0px`
             }
-            console.log('ARE YOU SOMEONE COOL? HMU... HMU IF YOURE JUST OKAY TOO')
+            
             if ((window.innerHeight + window.scrollY) >= (document.body.offsetHeight - 5)) {
                 frame.classList.add('bottom')
                 let hands = document.querySelectorAll('.pokey')
