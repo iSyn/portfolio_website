@@ -32,6 +32,40 @@ a:visited {
   animation: backgroundGradient 30s ease infinite;
 }
 
+.intro-popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  text-align: center;
+  padding: 25px;
+  background: #111;
+  color: white;
+  border: 5px ridge saddlebrown;
+}
+
+.intro-popup h1 {
+  font-size: 32px;
+}
+
+.intro-popup p {
+  font-size: 18px;
+}
+
+.intro-popup a {
+  color: red;
+}
+
+.intro-popup button {
+  background: transparent;
+  color: white;
+  border: 1px solid white;
+  padding: 4px 8px;
+  margin-top: 12px;
+  cursor: pointer;
+}
+
 
 .ads-im-sorry-please-dont-hate-me {
   display: hidden;
